@@ -1,0 +1,97 @@
+{
+  "title": "The Enteric Reproductive Continuum: A Scalar Frequency-Based Architecture of Human Genesis",
+  "creators": [
+    {
+      "name": "Macachor, Christopher",
+      "affiliation": "Independent Researcher, San Diego, CA",
+      "orcid": "0009-0008-0100-2856"
+    }
+  ],
+  "description": "This empirical research paper presents the unified framework of the Enteric Reproductive Continuum—the frequency-based architecture underlying all biological reproduction. Drawing on evidence from evolutionary biology, molecular biology, and developmental neuroscience, the study demonstrates that: (1) the enteric nervous system evolved before and independently of the central nervous system, establishing the gut as the 'first brain'; (2) sperm and intestinal tissues share identical protein machinery (GLUT5, SPEF1/CLAMP, cholinergic receptors); (3) neural stem cell fate is determined in a postmitotic window through mitochondrial dynamics—the head brain develops after mitosis; (4) egg activation is initiated by a calcium wave—a literal frequency signal triggered by osmotic pressure and mechanical forces; and (5) the Operator—the scalar force orchestrating this architecture—is identified as the fundamental frequency-based intelligence underlying creation.",
+  "keywords": [
+    "enteric nervous system",
+    "scalar resonance",
+    "calcium wave",
+    "sperm proteomics",
+    "mitochondrial dynamics",
+    "reproductive biology",
+    "human genesis",
+    "the Operator"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "upload_type": "publication",
+  "publication_type": "article",
+  "language": "eng",
+  "subjects": [
+    {
+      "term": "Reproductive Biology"
+    },
+    {
+      "term": "Evolutionary Biology"
+    },
+    {
+      "term": "Developmental Neuroscience"
+    },
+    {
+      "term": "Biophysics"
+    },
+    {
+      "term": "Molecular Biology"
+    }
+  ],
+  "relations": {
+    "alternates": [
+      {
+        "identifier": "https://scalar.macachor.org",
+        "relation": "isSupplementedBy",
+        "source": "metadata"
+      }
+    ]
+  },
+  "access_right": "open",
+  "access_right_category": "open",
+  "communities": [
+    {
+      "identifier": "biophysics"
+    },
+    {
+      "identifier": "neuroscience"
+    },
+    {
+      "identifier": "reproductive_health"
+    },
+    {
+      "identifier": "evolutionary_biology"
+    }
+  ],
+  "grants": [],
+  "references": [
+    "Burant, C.F., et al. (1992). \"Fructose transporter in human spermatozoa and small intestine is GLUT5.\" Journal of Biological Chemistry, 267(21), 14523-14526.",
+    "Furness, J.B., et al. (2018). \"The first brain: Species comparisons and evolutionary implications for the enteric and central nervous systems.\" Neurogastroenterology and Motility, 30(2), e13234.",
+    "Iwata, R., Casimir, P., & Vanderhaeghen, P. (2020). \"Mitochondrial dynamics in postmitotic cells regulate neurogenesis.\" Science, 369(6505), 858-862.",
+    "Kaneuchi, T., Wolfner, M.F., & Aigaki, T. (2015). \"Egg activation in Drosophila is triggered by mechanical forces that cause calcium entry.\" Molecular Reproduction and Development, 82, 501.",
+    "Tapia, R., et al. (2019). \"Sperm Flagellar 1 Binds Actin in Intestinal Epithelial Cells and Contributes to Formation of Filopodia and Lamellipodia.\" Gastroenterology, 157(6), 1544-1555.e3."
+  ],
+  "version": "1.0",
+  "publication_date": "2026-08-15",
+  "related_identifiers": [
+    {
+      "identifier": "https://space.macachor.org",
+      "relation": "isRelatedTo"
+    },
+    {
+      "identifier": "https://scalar.macachor.org",
+      "relation": "isSupplementedBy"
+    }
+  ],
+  "thesis": {
+    "university": "Independent Researcher",
+    "supervisors": [],
+    "defense_date": "2026-08-15"
+  },
+  "imprint": {
+    "publisher": "Zenodo",
+    "place": "Geneva",
+    "year": 2026
+  }
+}
