@@ -1,0 +1,481 @@
+# MACACHOR FUNDAMENTAL LAW
+
+## A Gradient-Flow Framework for Scalar Field Dynamics
+
+### Mathematical Hardening & Global-Convergence Stress Test — v4.2
+
+---
+
+**Author:** Christopher Macachor  
+**Version:** v4.2 — Domain-Reconciled Mathematical Hardening  
+**DOI:** 10.5281/zenodo.22038598  
+**Proposed fragment:** **Ω-FRAG-006**
+
+---
+
+## I. EXECUTIVE ABSTRACT
+
+This document presents a **mathematically hardened formulation** of the Macachor Fundamental Law. The framework is built around a **fixed Riemannian background**, a positive scalar field ψ, a unified potential, and gradient-flow dynamics. **The ambient space is a compact, connected, smooth Riemannian manifold without boundary** — this ensures consistency across existence theory, spectral theory, and stability analysis without the need for boundary conditions.
+
+**Critical corrections from v4.0/v4.1:**
+- **v4.1 fixed:** Restored unified potential V(ψ) = ¼(ψ² − M²)², ensuring M is the unique positive zero-energy state and a stationary solution.
+- **v4.2 fixes:** Reconciled the domain inconsistency — §III and §V now agree on a **compact boundaryless Riemannian manifold** throughout.
+
+The hierarchy of claims is made unmistakable: theorems are labeled as proved, conditional results as conditional, conjectures as conjectural, and empirical claims as hypotheses requiring testing.
+
+---
+
+## II. HIERARCHY OF CLAIMS
+
+| **Claim** | **v4.2 Status** |
+|---|---|
+| Energy functional is nonnegative | **Theorem/definition-level** |
+| Energy is non-increasing along trajectories | **Proposition** |
+| ψ = M is the unique positive zero-energy state | **Theorem** |
+| ψ = M is a stationary solution of the PDE | **Theorem** |
+| Linear perturbations about M decay | **Theorem** |
+| M is locally asymptotically stable | **Theorem** |
+| Positive solutions remain positive | **To prove explicitly** |
+| Every positive initial condition converges to M | **Open until proved** |
+| M is physically fundamental | **Hypothesis** |
+| M's golden-ratio value is mathematically derived | **Not established — axiomatic parameter choice** |
+| νcrit = 6.8 follows from the theory | **Not established — remove unless empirical basis supplied** |
+| Macachor model makes experimentally distinguishable predictions | **To formulate/test** |
+
+---
+
+## III. MATHEMATICAL SETUP
+
+### 3.1 Ambient Space
+
+Let **(Mⁿ, g)** be a **compact, connected, smooth Riemannian manifold without boundary**.
+
+**Rationale:** This choice ensures:
+- The Laplacian Δ has a discrete spectrum with a zero eigenvalue (constant functions)
+- Standard existence/uniqueness theory for parabolic PDEs applies without boundary conditions
+- Spectral theory and stability analysis are well-defined
+- The setup in §III, §V, and §VI all refer to the same object
+
+### 3.2 The Scalar Field
+
+Let ψ: Mⁿ → ℝ⁺ be a positive scalar field on the compact manifold. The positivity condition ψ > 0 is essential for the construction involving ν = 1/ψ².
+
+### 3.3 The Macachor Potential
+
+The potential is defined as:
+
+```
+V(ψ) = ¼(ψ² − M²)²
+```
+
+This is a double-well potential with minima at ψ = ±M. In the present framework, the positive minimum at ψ = M is the physically relevant stationary state.
+
+**Key property:** V(ψ) = 0 if and only if ψ = ±M. For ψ > 0, V(ψ) = 0 if and only if ψ = M.
+
+### 3.4 The Macachor Constant
+
+**M = (√5 − 1)/2 ≈ 0.61803398875**
+
+This is labeled an **axiomatic parameter choice** unless an independent derivation is supplied. It is not claimed to be mathematically derived from the gradient-flow structure alone.
+
+### 3.5 The Energy Functional
+
+The energy functional is:
+
+```
+E[ψ] = ∫_M [ ½||∇ψ||² + V(ψ) ] dV_g
+```
+
+where V(ψ) = ¼(ψ² − M²)² and dV_g is the Riemannian volume form.
+
+**Theorem:** E[ψ] ≥ 0 for all ψ in the appropriate function space.
+
+**Proof:** Each term in the integrand is nonnegative: ||∇ψ||² ≥ 0 and V(ψ) ≥ 0. Therefore E[ψ] ≥ 0.
+
+### 3.6 The Zero-Energy State
+
+**Theorem:** ψ = M is the unique positive zero-energy state.
+
+**Proof:** For E[ψ] = 0, each term must vanish pointwise:
+- ∇ψ = 0 → ψ is constant (on a connected manifold)
+- V(ψ) = 0 → ψ = ±M
+
+Since ψ > 0, the only solution is ψ = M.
+
+**This is correct by construction** — the unified potential has its unique positive zero exactly at M.
+
+---
+
+## IV. GRADIENT-FLOW DYNAMICS
+
+### 4.1 The Reaction-Diffusion Equation
+
+The gradient-flow dynamics on the compact Riemannian manifold are:
+
+```
+∂ψ/∂t = Δψ - V'(ψ)
+```
+
+with V'(ψ) = ψ(ψ² - M²).
+
+Expanding:
+
+```
+∂ψ/∂t = Δψ - ψ(ψ² - M²)
+∂ψ/∂t = Δψ + M²ψ - ψ³
+```
+
+### 4.2 Mathematical Classification
+
+This equation is **mathematically a scalar Allen–Cahn / Ginzburg–Landau-type gradient flow** on a compact Riemannian manifold.
+
+What is novel about the **Macachor formulation** is:
+- The choice of variable (positive scalar field ψ)
+- The interpretation (scalar field dynamics on a fixed Riemannian background)
+- The parameterization (including M = (√5−1)/2 as an axiomatic constant)
+- The proposed observable (the quantity ν = 1/ψ², interpreted as an information-theoretic measure)
+- The empirical predictions (to be formulated in subsequent work)
+
+### 4.3 Stationary Solution
+
+**Theorem:** ψ = M is a stationary solution of the PDE.
+
+**Verification:** For constant ψ = M, the equation becomes:
+
+```
+∂ψ/∂t = 0 - V'(M) = -M(M² - M²) = 0
+```
+
+**This is correct** — M is indeed a critical point of V.
+
+### 4.4 Energy Dissipation
+
+**Proposition:** Energy is non-increasing along trajectories.
+
+**Proof:** For solutions of the gradient-flow equation on a compact manifold,
+
+```
+dE/dt = -∫_M (∂ψ/∂t)² dV_g ≤ 0
+```
+
+Thus E is monotonically non-increasing.
+
+---
+
+## V. EXISTENCE AND UNIQUENESS
+
+### 5.1 Setup
+
+Let (Mⁿ, g) be a compact, connected, smooth Riemannian manifold without boundary, as specified in §III. Let the initial data ψ₀ ∈ H¹(M) with ψ₀ > 0 almost everywhere.
+
+### 5.2 Function Spaces
+
+- ψ ∈ C([0,T]; H¹(M)) ∩ L²([0,T]; H²(M))
+- ∂ψ/∂t ∈ L²([0,T]; L²(M))
+
+where Hᵏ(M) are the Sobolev spaces on the compact Riemannian manifold.
+
+### 5.3 Solution Class
+
+The equation is a semilinear parabolic PDE on a compact manifold. Standard theory guarantees:
+
+**Theorem:** For ψ₀ ∈ H¹(M) with appropriate regularity, there exists a unique solution ψ ∈ C([0,T]; H¹(M)) for some T > 0.
+
+**Open question:** Does the solution exist globally in time (T = ∞)?
+
+**Conditional result:** If the energy remains bounded and the solution remains in the positive domain, global existence follows from standard parabolic theory on compact manifolds.
+
+---
+
+## VI. LOCAL STABILITY ANALYSIS
+
+### 6.1 Linearization
+
+Let ψ = M + ε φ, where ε is small. The linearized equation is:
+
+```
+∂φ/∂t = Δφ - V''(M)φ
+```
+
+where V''(ψ) = 3ψ² - M², so V''(M) = 3M² - M² = 2M².
+
+Thus:
+
+```
+∂φ/∂t = Δφ - 2M²φ
+```
+
+### 6.2 Spectral Decomposition
+
+On the compact Riemannian manifold (Mⁿ, g), the Laplacian Δ has a discrete spectrum:
+
+```
+0 = λ₀ < λ₁ ≤ λ₂ ≤ ... → ∞
+```
+
+with corresponding eigenfunctions {φ_k}. For a Fourier mode φ_k ∼ e^{λ t} φ_k:
+
+```
+λ = -λ_k - 2M²
+```
+
+Since λ_k ≥ 0, λ ≤ -2M² < 0 for every mode, including the constant mode k = 0.
+
+**Theorem:** All linear perturbations about M decay exponentially with rate at least 2M² > 0.
+
+### 6.3 Local Asymptotic Stability
+
+**Theorem:** M is locally asymptotically stable.
+
+**Proof:** The linearization about M has strictly negative spectrum for every mode (including the constant mode, because the potential curvature term −2M² supplies the decay). Thus the unique steady state ψ = M is locally exponentially stable.
+
+**Note:** Unlike the compact-manifold version with the zero-mode caveat, here every mode decays with rate ≥ 2M² regardless of k = 0. The potential curvature term is sufficient.
+
+---
+
+## VII. GLOBAL CONVERGENCE
+
+### 7.1 State of the Problem
+
+**Open question:** Does every positive initial condition converge to M as t → ∞?
+
+**Status:** Open until proved.
+
+### 7.2 The Łojasiewicz–Simon Approach
+
+If the Łojasiewicz–Simon inequality holds for the energy functional, global convergence to a stationary solution follows. This requires:
+
+1. The energy functional is analytic
+2. The stationary solutions are isolated
+3. The Łojasiewicz exponent is known
+
+**Conditional statement:** If the Łojasiewicz–Simon inequality holds for the Macachor energy functional on the compact Riemannian manifold, then every positive solution converges to a stationary solution.
+
+**Open question:** Does the stationary solution necessarily have ψ = M? This requires proving that no other positive stationary solutions exist.
+
+### 7.3 Stationary Solutions
+
+The stationary equation is:
+
+```
+-Δψ + V'(ψ) = 0
+```
+
+or
+
+```
+-Δψ + ψ(ψ² - M²) = 0
+```
+
+**Known solutions:**
+- ψ = M (the spatially uniform zero-energy state)
+- Possibly other spatially inhomogeneous solutions
+
+**Open question:** Are there other positive stationary solutions?
+
+**Hypothesis:** M is the only positive stationary solution that is stable and has finite energy. Other stationary solutions may exist but are unstable or have infinite energy.
+
+### 7.4 Global versus Local Stability
+
+The existing local exponential stability result is **not** promoted to global asymptotic stability unless the additional argument actually establishes that.
+
+**Status:** Local stability is proved. Global stability is an open problem.
+
+---
+
+## VIII. THE MACACHOR FORMULATION: NOVELTY AND DISTINCTION
+
+### 8.1 Mathematical Structure
+
+The equation is **mathematically a scalar Allen–Cahn / Ginzburg–Landau-type gradient flow** on a compact Riemannian manifold.
+
+This is a standard mathematical object with well-established properties.
+
+### 8.2 What Is Novel
+
+The Macachor formulation is novel in the following respects:
+
+| **Aspect** | **Macachor Formulation** |
+|---|---|
+| **Variable choice** | Positive scalar field ψ |
+| **Interpretation** | Scalar field dynamics on a compact Riemannian background |
+| **Parameterization** | Inclusion of M = (√5−1)/2 as an axiomatic constant |
+| **Observable** | The quantity ν = 1/ψ², interpreted as an information-theoretic measure |
+| **Empirical predictions** | To be formulated in subsequent work |
+
+### 8.3 The Macachor Constant
+
+**M = (√5 − 1)/2**
+
+**Status:** This is an **axiomatic parameter choice**, unless an independent derivation is supplied.
+
+It is **not** claimed that:
+- M is mathematically derived from the gradient-flow structure alone
+- The golden ratio follows uniquely from the energy functional
+- Any physical or empirical value has been established
+
+The role of M in the current framework is as a parameter that:
+1. Sets the unique positive zero-energy state
+2. Determines the local stability properties
+3. Provides a reference value for the scalar field
+
+---
+
+## IX. EMPIRICAL PREDICTIONS
+
+### 9.1 Status
+
+**Open question:** Does the Macachor model make experimentally distinguishable predictions?
+
+**Status:** To formulate/test in subsequent work.
+
+### 9.2 Candidate Observable
+
+The quantity ν = 1/ψ² is proposed as an information-theoretic measure. If ν can be related to a measurable biological or physical observable, this would provide a route to empirical testing.
+
+### 9.3 Falsification Criteria
+
+For the Macachor framework to be falsifiable, the following must be specified:
+
+1. The measurable observable corresponding to ν
+2. The predicted behavior of ν under specific experimental conditions
+3. The expected signal-to-noise ratio
+4. The thresholds for accepting or rejecting the hypothesis
+
+**Status:** These have not yet been formulated.
+
+---
+
+## X. NUMERICAL PARAMETERS
+
+### 10.1 Removal of νcrit = 6.8
+
+**νcrit = 6.8** should either:
+- Acquire an independently stated empirical basis, or
+- Be removed from the mathematical core
+
+**Status:** This value is not established by the current mathematical framework. It is removed from the mathematical core unless an empirical basis is supplied.
+
+### 10.2 Remaining Parameters
+
+| **Parameter** | **Value** | **Status** |
+|---|---|---|
+| M | (√5 − 1)/2 ≈ 0.618 | Axiomatic parameter choice |
+| ν = 1/ψ² | Variable | Defined quantity |
+| νcrit | 6.8 | Not established — remove |
+
+---
+
+## XI. THE UNCOMPROMISED TRUTH
+
+> **The Macachor Fundamental Law is a gradient-flow framework for scalar field dynamics on a compact Riemannian manifold without boundary. The energy functional is nonnegative, and the unique positive zero-energy state is ψ = M, where M = (√5 − 1)/2 is an axiomatic parameter choice.**
+
+> **The energy is non-increasing along trajectories. M is locally asymptotically stable.**
+
+> **The following are open questions:**
+> - Does positivity of initial data guarantee positivity for all finite t?
+> - Does every positive initial condition converge to M?
+> - Are there other positive stationary solutions?
+> - What are the experimentally distinguishable predictions of the Macachor model?
+
+> **The following are not established:**
+> - That M is mathematically derived from the gradient-flow structure
+> - That νcrit = 6.8 follows from the theory
+> - That the Macachor model has been empirically validated
+
+> **Macachor is a structural discovery of fragmented science.**
+
+---
+
+## XII. CONCLUSION
+
+The v4.2 Mathematical Hardening has accomplished the following:
+
+1. **Corrected the critical bug** from v4.0: the unified potential V(ψ) = ¼(ψ² − M²)² ensures that M is both the unique positive zero-energy state and a stationary solution of the dynamics.
+
+2. **Reconciled the domain inconsistency:** §III and §V now agree on a **compact, connected, smooth Riemannian manifold without boundary** throughout — ensuring consistency across existence theory, spectral theory, and stability analysis.
+
+3. **Established a clear hierarchy of claims:** Theorems, propositions, conjectures, and hypotheses are explicitly labeled.
+
+4. **Proved the core results:** Nonnegativity of energy, energy dissipation, uniqueness of the zero-energy state, stationarity of M, local stability of M (with no zero-mode caveat needed).
+
+5. **Identified the open questions:** Positivity preservation, global convergence, other stationary solutions, empirical predictions.
+
+6. **Removed unsupported numerical baggage:** νcrit = 6.8 is removed unless an empirical basis is supplied.
+
+7. **Clarified the status of the Macachor constant:** M = (√5 − 1)/2 is an axiomatic parameter choice, not a derived result.
+
+8. **Separated mathematical structure from physical originality:** The equation is a scalar Allen–Cahn/Ginzburg–Landau-type gradient flow on a compact manifold; the Macachor formulation is novel in its variable choice, interpretation, parameterization, and proposed observables.
+
+The global-convergence problem is now a **clean mathematical question** rather than a rhetorical vulnerability. The framework has been reduced to a form where that question can be attacked directly.
+
+**Macachor is a structural discovery of fragmented science.**
+
+---
+
+## XIII. REFERENCES
+
+1. Allen, S.M., & Cahn, J.W. (1979). A microscopic theory for antiphase boundary motion and its application to antiphase domain coarsening. *Acta Metallurgica*, 27(6), 1085-1095.
+
+2. Cahn, J.W., & Hilliard, J.E. (1958). Free energy of a nonuniform system. I. Interfacial free energy. *The Journal of Chemical Physics*, 28(2), 258-267.
+
+3. Ginzburg, V.L., & Landau, L.D. (1950). On the theory of superconductivity. *Zhurnal Eksperimental'noi i Teoreticheskoi Fiziki*, 20, 1064-1082.
+
+4. Łojasiewicz, S. (1963). Une propriété topologique des sous-ensembles analytiques réels. *Colloques Internationaux du CNRS*, 117, 87-89.
+
+5. Simon, L. (1983). Asymptotics for a class of non-linear evolution equations, with applications to geometric problems. *Annals of Mathematics*, 118(3), 525-571.
+
+6. Evans, L.C. (2010). *Partial Differential Equations* (2nd ed.). American Mathematical Society.
+
+7. Aubin, T. (1998). *Some Nonlinear Problems in Riemannian Geometry*. Springer.
+
+---
+
+## XIV. APPENDIX
+
+### A. The Macachor Structural Convergence Principle (Full Statement)
+
+> *"Biological structures that independently evolve for different purposes converge on identical geometries when they serve similar information-processing functions. This convergence is observable across multiple systems and provides a basis for identifying common architectural principles. The appearance of similar geometries in disparate biological contexts—the Obelisk's rod-like circular structure, the sperm tail's tubulin helix, the ENS's network topology, the vagus's afferent dominance, and the umbilical cord's Wharton's jelly—suggests a common organizing principle that warrants investigation."*
+
+### B. The Structural Discovery Statement
+
+> *"Macachor is a structural discovery of fragmented science. The fragments were always there. No one connected them because they were fragmented. Macachor is the name of the connection. The author did not build these frameworks piece by piece. The patterns arrived whole. The fragments were then backfilled. This is scalar perception: pattern-first, then verification. Scalar perception connects. Vector assembly fragments."*
+
+### C. The Epistemic Statement
+
+> *"The observations are established independently; their convergence motivates the present theoretical model. The proposed mechanism is a falsifiable hypothesis rather than an established biological fact."*
+
+### D. Ω-FRAG-006 Summary
+
+**Proposed Fragment:** Ω-FRAG-006  
+**Title:** Macachor Fundamental Law — v4.2 Domain-Reconciled Mathematical Hardening  
+**Domain:** Mathematical Physics, Scalar Field Theory, Gradient-Flow Dynamics  
+**Key Contribution:** Rigorous formulation of the Macachor Fundamental Law with explicit hierarchy of claims  
+**Critical Corrections:**  
+- **v4.1:** Restored unified potential V(ψ) = ¼(ψ² − M²)²  
+- **v4.2:** Reconciled domain — compact boundaryless Riemannian manifold throughout  
+**Epistemic Status:** Structural discovery with testable hypotheses  
+**Open Questions:** Positivity preservation, global convergence, empirical predictions
+
+---
+
+**[END OF DOCUMENT]**
+
+---
+
+*"Macachor is a structural discovery of fragmented science."*
+
+— Christopher Macachor
+
+---
+
+**Color Palette Applied:**
+- **Primary:** Navy Blue (#1B2A4A)
+- **Accent:** Restrained Gold (#C9A961)
+- **Background:** Clean White (#FFFFFF)
+- **Text:** Dark Navy (#0A1628)
+- **Citations:** Gold (#B8943C)
+
+---
+
+*This document represents the corrected and domain-reconciled mathematical hardening of the Macachor Fundamental Law. The critical bug from v4.0 has been fixed (unified potential), and the domain inconsistency between §III and §V has been reconciled (compact boundaryless Riemannian manifold throughout). The hierarchy of claims is made unmistakable: theorems are labeled as proved, conditional results as conditional, conjectures as conjectural, and empirical claims as hypotheses requiring testing.*
