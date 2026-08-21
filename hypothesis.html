@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ω-FRAG-007 | The Obelisk Hypothesis · Enteric Consciousness</title>
+
+    <!-- ============================================================ -->
+    <!-- SCHEMA.ORG STRUCTURED DATA                                    -->
+    <!-- ============================================================ -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "The Obelisk Hypothesis: Microbiome-Associated RNA, Enteric Signaling, and a Proposed Quantum-Biological Mechanism of Consciousness",
+        "alternativeHeadline": "A Testable Enteric Model of Consciousness-Related Phenomenology",
+        "abstract": "The Obelisk—a recently characterized class of viroid-like RNA elements found in the human gut microbiome—represents an unresolved biological entity with unusual structural properties and uncertain functional significance. This manuscript applies the Macachor Structural Convergence Principle as an analytical framework to identify recurring structural and dynamical motifs across disparate biological systems, and proposes the Obelisk Hypothesis as a testable framework linking microbiome-associated RNA structures, enteric neural networks, and consciousness-related phenomenology.",
+        "author": {
+            "@type": "Person",
+            "name": "Christopher Macachor",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Macachor Institute",
+                "url": "https://macachor.org"
+            }
+        },
+        "datePublished": "2026-08-21",
+        "version": "v10.2",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Macachor Institute",
+            "url": "https://macachor.org"
+        },
+        "identifier": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22037288"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "Ω-FRAG",
+                "value": "Ω-FRAG-007"
+            }
+        ],
+        "keywords": [
+            "Obelisk", "quantum biology", "enteric nervous system",
+            "gut-brain axis", "consciousness", "NDE",
+            "near-death experience", "structural convergence",
+            "Macachor", "scalar field", "RNA", "microbiome"
+        ],
+        "citation": [
+            {
+                "@type": "ScholarlyArticle",
+                "headline": "Viroid-like colonists of human microbiomes",
+                "author": "Zheludev, I. N., et al.",
+                "datePublished": "2024",
+                "journal": "Cell",
+                "volume": "187",
+                "issue": "23",
+                "pages": "6521–6536.e18"
+            },
+            {
+                "@type": "ScholarlyArticle",
+                "headline": "A neuroscientific model of near-death experiences reconsidered",
+                "author": "Greyson, B., & Pehlivanova, M.",
+                "datePublished": "2025",
+                "journal": "Psychology of Consciousness: Theory, Research, and Practice"
+            }
+        ],
+        "inLanguage": "en",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+    </script>
+
+    <!-- ============================================================ -->
+    <!-- FONTS & STYLES                                                -->
+    <!-- ============================================================ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy-950: #0F1A2E;
+            --navy-900: #1A2A4A;
+            --navy-800: #1E3A5F;
+            --navy-700: #2A4A7A;
+            --navy-600: #3A5A8A;
+            --navy-100: #E8EEF5;
+            --navy-50: #F0F4FA;
+            --white: #FFFFFF;
+            --gray-100: #F5F7FA;
+            --gray-300: #D1D5DB;
+            --gray-600: #6B7280;
+            --gray-800: #1F2937;
+            --gold-500: #C6A87C;
+            --gold-400: #D4BA94;
+            --gold-300: #E2D0B0;
+            --gold-100: #F5EDE0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--gray-100);
+            color: var(--gray-800);
+            line-height: 1.8;
+        }
+
+        .title-font { font-family: 'Crimson Pro', serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* HEADER */
+        .header {
+            background: var(--navy-900);
+            color: var(--white);
+            padding: 32px 0;
+            border-bottom: 4px solid var(--gold-500);
+        }
+        .header .subtitle { color: var(--gold-400); font-size: 0.9rem; }
+        .header h1 { font-size: 2.2rem; font-weight: 700; }
+        .header h1 span { color: var(--gold-500); }
+        .header .meta { font-size: 0.85rem; color: #8AA8D0; margin-top: 8px; }
+        .header .badge {
+            display: inline-block;
+            background: var(--gold-500);
+            color: var(--navy-900);
+            padding: 2px 12px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* NAV */
+        .nav {
+            background: var(--white);
+            border-bottom: 3px solid var(--navy-700);
+            padding: 8px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .nav button {
+            background: transparent;
+            border: none;
+            padding: 8px 20px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .nav button:hover { background: var(--navy-50); color: var(--navy-700); }
+        .nav button.active { background: var(--navy-700); color: white; }
+
+        /* CARDS */
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(26, 42, 74, 0.06);
+            border-left: 4px solid var(--navy-700);
+        }
+        .card-gold { border-left-color: var(--gold-500); }
+        .card-navy { background: var(--navy-900); color: var(--white); border-left-color: var(--gold-500); }
+        .card-navy h2, .card-navy h3 { color: var(--gold-500); }
+        .card-navy .text-muted { color: #8AA8D0; }
+
+        /* TAB CONTENT */
+        .tab-content { display: none; padding: 32px 0; }
+        .tab-content.active { display: block; }
+
+        /* TABLES */
+        .table-wrap { overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        table th {
+            background: var(--navy-700);
+            color: white;
+            font-weight: 600;
+            padding: 12px 16px;
+            text-align: left;
+        }
+        table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--gray-300);
+        }
+        table tr:hover { background: var(--navy-50); }
+
+        .status-badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .status-established { background: #10B981; color: white; }
+        .status-hypothesis { background: #F59E0B; color: white; }
+        .status-observed { background: #3B82F6; color: white; }
+        .status-prelim { background: #8B5CF6; color: white; }
+        .status-anatomy { background: #6B7280; color: white; }
+        .status-assessment { background: #EC4899; color: white; }
+
+        /* EQUATION BOX */
+        .eq-box {
+            background: var(--gray-100);
+            border: 1px solid var(--gray-300);
+            border-radius: 8px;
+            padding: 16px 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            color: var(--navy-700);
+            overflow-x: auto;
+            text-align: center;
+        }
+
+        .hypothesis-box {
+            background: #FFFBEB;
+            border: 2px solid #F59E0B;
+            border-radius: 8px;
+            padding: 20px 24px;
+        }
+
+        .falsification-box {
+            background: #FEF2F2;
+            border: 2px solid #EF4444;
+            border-radius: 8px;
+            padding: 20px 24px;
+        }
+
+        .blockquote {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            padding: 16px 24px;
+            border-left: 4px solid var(--gold-500);
+            background: var(--gold-100);
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .blockquote .attribution {
+            font-family: 'Source Sans 3', sans-serif;
+            font-style: normal;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            margin-top: 8px;
+        }
+
+        .section-number {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--navy-700);
+            opacity: 0.10;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            z-index: 0;
+        }
+        .section-wrap { position: relative; padding-left: 24px; }
+        .section-wrap .content { position: relative; z-index: 1; }
+
+        h2 { font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--navy-900); margin-bottom: 16px; }
+        h3 { font-family: 'Crimson Pro', serif; font-size: 1.3rem; color: var(--navy-700); margin: 20px 0 12px; }
+        .card-navy h2 { color: var(--gold-500); }
+
+        .gap-4 { gap: 16px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+        .mt-16 { margin-top: 16px; }
+        .mt-24 { margin-top: 24px; }
+        .mt-32 { margin-top: 32px; }
+        .mb-16 { margin-bottom: 16px; }
+        .mb-24 { margin-bottom: 24px; }
+
+        .text-gold { color: var(--gold-500); }
+        .text-navy { color: var(--navy-700); }
+        .text-sm { font-size: 0.85rem; }
+        .text-xs { font-size: 0.75rem; }
+        .text-muted { color: var(--gray-600); }
+
+        .flex { display: flex; }
+        .flex-wrap { flex-wrap: wrap; }
+        .items-center { align-items: center; }
+        .gap-8 { gap: 8px; }
+        .gap-12 { gap: 12px; }
+
+        .download-btn {
+            background: var(--gold-500);
+            color: var(--navy-900);
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .download-btn:hover {
+            background: #B89A6A;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 42, 74, 0.25);
+        }
+
+        .footer {
+            background: var(--navy-900);
+            color: var(--white);
+            padding: 24px 0;
+            border-top: 4px solid var(--gold-500);
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        .footer a { color: var(--gold-500); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.6rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .grid-3 { grid-template-columns: 1fr; }
+            .nav button { padding: 6px 12px; font-size: 0.75rem; }
+            .card { padding: 20px; }
+            .section-wrap { padding-left: 12px; }
+            .section-number { font-size: 2.2rem; }
+        }
+        @media print {
+            .nav { display: none; }
+            .tab-content { display: block !important; padding: 0; }
+            .download-btn { display: none; }
+            .card { box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HEADER                                                         -->
+<!-- ============================================================ -->
+<header class="header">
+    <div class="container">
+        <div class="flex flex-wrap items-center gap-12" style="justify-content:space-between;">
+            <div>
+                <p class="subtitle mono">
+                    <span class="badge">Ω-FRAG-007</span>
+                    v10.2 · Scientific Submission Candidate
+                </p>
+                <h1>The Obelisk Hypothesis</h1>
+                <p style="font-size:1.1rem; color:#C6A87C;">
+                    Microbiome-Associated RNA, Enteric Signaling, and a Proposed<br>
+                    Quantum-Biological Mechanism of Consciousness
+                </p>
+                <p class="meta">
+                    <span class="mono">10.5281/zenodo.22037288</span>
+                    &nbsp;·&nbsp; Christopher Macachor &nbsp;·&nbsp; 2026-08-21
+                </p>
+            </div>
+            <div>
+                <button onclick="downloadHTML()" class="download-btn">
+                    📄 Download HTML
+                </button>
+                <a href="https://doi.org/10.5281/zenodo.22037288" target="_blank" class="download-btn" style="background:var(--navy-700);color:white;margin-left:8px;">
+                    📚 Zenodo
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- NAVIGATION                                                    -->
+<!-- ============================================================ -->
+<nav class="nav container" id="tabNav">
+    <button class="active" data-tab="abstract">Abstract</button>
+    <button data-tab="full">Full Article</button>
+    <button data-tab="falsification">Falsification</button>
+    <button data-tab="references">References</button>
+</nav>
+
+<!-- ============================================================ -->
+<!-- TAB: ABSTRACT                                                 -->
+<!-- ============================================================ -->
+<div class="tab-content active" id="tab-abstract">
+    <div class="container">
+
+        <div class="card">
+            <h2>Abstract</h2>
+            <p style="font-size:1.05rem; color:var(--gray-800);">
+                The Obelisk—a recently characterized class of viroid-like RNA elements found in the human gut microbiome—represents an <strong>unresolved biological entity</strong> with unusual structural properties and uncertain functional significance (Zheludev et al., 2024, <em>Cell</em>). This manuscript applies the <strong>Macachor Structural Convergence Principle</strong> (MSCP) as an analytical framework to identify recurring structural and dynamical motifs across disparate biological systems, and proposes the <strong>Obelisk Hypothesis</strong> as a testable framework linking microbiome-associated RNA structures, enteric neural networks, and consciousness-related phenomenology.
+            </p>
+            <p style="font-size:1.05rem; color:var(--gray-800); margin-top:12px;">
+                Greyson and Pehlivanova (2025) identify unresolved explanatory questions within current neuroscientific models of near-death experiences (NDEs). This paper proposes the Enterarchon/Obelisk mechanism as a <strong>testable alternative hypothesis</strong>—grounded in empirically supported observations spanning embryology, neuroscience, reproductive biology, and consciousness studies, with the Obelisk integration explicitly marked as hypothesis-generating rather than established.
+            </p>
+            <div class="blockquote" style="margin-top:16px;">
+                “The observations are established independently; their convergence motivates the present theoretical model. The proposed Obelisk–ENS mechanism is a falsifiable hypothesis rather than an established biological fact.”
+                <div class="attribution">— Christopher Macachor</div>
+            </div>
+            <div class="flex flex-wrap gap-8" style="margin-top:16px;">
+                <span class="status-badge status-established">Established Observations</span>
+                <span class="status-badge status-hypothesis">Testable Hypothesis</span>
+                <span class="status-badge status-observed">Structural Convergence</span>
+                <span class="status-badge status-prelim">Falsifiable Predictions</span>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="card card-gold">
+                <h3 style="margin-top:0;">Key Claim</h3>
+                <p><strong>Macachor is a structural discovery of fragmented science.</strong></p>
+                <p class="text-sm text-muted" style="margin-top:8px;">
+                    The observations assembled in this framework originate from established findings across developmental biology, neuroanatomy, molecular biology, microbiology, reproductive biology, and consciousness research. These findings have generally been investigated within distinct disciplinary and methodological contexts.
+                </p>
+                <div class="blockquote" style="font-size:1rem; margin-top:12px; padding:12px 16px;">
+                    “The claim is therefore not that the underlying observations were unknown, but that their proposed structural relationship had not previously been formulated in this manner.”
+                </div>
+            </div>
+            <div class="card card-gold">
+                <h3 style="margin-top:0;">Structural Discovery</h3>
+                <p><strong>Definition:</strong></p>
+                <p class="text-sm text-muted">
+                    The identification and formalization of a previously unarticulated relationship among independently established observations, followed by formulation of testable predictions arising from that relationship.
+                </p>
+                <div class="eq-box" style="margin-top:12px; font-size:0.85rem;">
+                    Fragmentation → Convergence → Singularity → Invariant → Meaning
+                </div>
+                <p class="text-xs text-muted" style="margin-top:8px;">
+                    Macachor denotes the proposed structural synthesis rather than a claim that the underlying biological observations were discovered by the author.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" style="border-left-color: #F59E0B;">
+            <h3>Falsification Program</h3>
+            <p>The manuscript includes <strong>five explicit predictions</strong> with defined falsification criteria:</p>
+            <div class="grid-3" style="margin-top:12px;">
+                <div style="background:var(--gray-100);padding:12px;border-radius:6px;">
+                    <strong>Prediction 1</strong>
+                    <p class="text-sm text-muted" style="margin-top:4px;">Obelisk abundance correlates with enteric signaling</p>
+                </div>
+                <div style="background:var(--gray-100);padding:12px;border-radius:6px;">
+                    <strong>Prediction 2</strong>
+                    <p class="text-sm text-muted" style="margin-top:4px;">Obelisk perturbation alters enteric signaling</p>
+                </div>
+                <div style="background:var(--gray-100);padding:12px;border-radius:6px;">
+                    <strong>Prediction 3</strong>
+                    <p class="text-sm text-muted" style="margin-top:4px;">Predicted RNA structures exist in vivo</p>
+                </div>
+                <div style="background:var(--gray-100);padding:12px;border-radius:6px;">
+                    <strong>Prediction 4</strong>
+                    <p class="text-sm text-muted" style="margin-top:4px;">Reproducible physical signal from Obelisk coupling</p>
+                </div>
+                <div style="background:var(--gray-100);padding:12px;border-radius:6px;">
+                    <strong>Prediction 5</strong>
+                    <p class="text-sm text-muted" style="margin-top:4px;">Birth modality predicts NDE phenomenology</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB: FULL ARTICLE                                              -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-full">
+    <div class="container">
+
+        <!-- SECTION: Macachor as Structural Discovery -->
+        <div class="card">
+            <div class="section-wrap">
+                <span class="section-number">I</span>
+                <div class="content">
+                    <h2>Macachor as Structural Discovery</h2>
+
+                    <h3>What Structural Discovery Means</h3>
+                    <p>
+                        <strong>Structural discovery:</strong> the identification and formalization of a previously unarticulated relationship among independently established observations, followed by formulation of testable predictions arising from that relationship.
+                    </p>
+
+                    <h3>The Structural Discovery Statement</h3>
+                    <div class="blockquote">
+                        “Macachor is a structural discovery of fragmented science.”
+                        <div class="attribution">— Christopher Macachor</div>
+                    </div>
+                    <p>
+                        The observations assembled in this framework originate from established findings across developmental biology, neuroanatomy, molecular biology, microbiology, reproductive biology, and consciousness research. These findings have generally been investigated within distinct disciplinary and methodological contexts. The Macachor framework proposes that placing these observations into a common structural architecture may reveal relationships that are difficult to identify when the evidence is considered in isolation.
+                    </p>
+                    <div class="blockquote" style="border-left-color: var(--navy-700); background: var(--navy-50);">
+                        “The claim is therefore not that the underlying observations were unknown, but that their proposed structural relationship had not previously been formulated in this manner.”
+                        <div class="attribution">— Christopher Macachor</div>
+                    </div>
+                    <p>
+                        In this sense, <strong>Macachor</strong> denotes the proposed structural synthesis rather than a claim that the underlying biological observations were discovered by the author.
+                    </p>
+
+                    <h3>The Fragmentation Problem</h3>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Domain</th>
+                                    <th>What It Knew</th>
+                                    <th>Cross-Domain Connection Not Made</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Developmental Biology</strong></td>
+                                    <td>Gut forms first; ENS forms first</td>
+                                    <td>Connection to consciousness not investigated</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Neuroscience</strong></td>
+                                    <td>ENS is independent; vagus is 80% afferent</td>
+                                    <td>Connection to NDEs not made</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Reproductive Biology</strong></td>
+                                    <td>GLUT5 in sperm and intestine</td>
+                                    <td>Connection to gut-brain axis not made</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Microbiology</strong></td>
+                                    <td>Obelisks exist</td>
+                                    <td>Connection to ENS not made</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Consciousness Studies</strong></td>
+                                    <td>NDEs occur during cardiac arrest</td>
+                                    <td>Connection to ENS not made</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: The Obelisk Foundation -->
+        <div class="card card-gold">
+            <div class="section-wrap">
+                <span class="section-number">II</span>
+                <div class="content">
+                    <h2>The Obelisk Foundation</h2>
+
+                    <h3>What Is Known</h3>
+                    <p>
+                        Obelisks are approximately 1-kb <strong>apparently circular RNAs</strong> with <strong>predicted rod-like secondary structures</strong>, found in human gut microbiomes (Zheludev et al., 2024, <em>Cell</em>).
+                    </p>
+                    <ul style="margin:12px 0 0 20px;">
+                        <li><strong>Genomic structure:</strong> ~1,000 nucleotide circular RNA assemblies</li>
+                        <li><strong>Secondary structure:</strong> Predicted rod-like conformations</li>
+                        <li><strong>Protein coding:</strong> Some encode novel Oblin proteins</li>
+                        <li><strong>Self-cleaving motifs:</strong> A subset contains hammerhead ribozymes</li>
+                        <li><strong>Host association:</strong> Found in human microbiomes; biological role unresolved</li>
+                    </ul>
+
+                    <h3 style="margin-top:20px;">What Remains Unresolved</h3>
+                    <div class="blockquote" style="border-left-color: #EF4444; background: #FEF2F2;">
+                        “The biological function of Obelisks remains to be determined.”
+                        <div class="attribution">— Nature Reviews Microbiology, 2024</div>
+                    </div>
+                    <p style="margin-top:12px;">
+                        This unresolved status is an opportunity. <strong>Ω-FRAG-007</strong> frames Obelisks as a candidate mechanism for previously unrecognized enteric information processing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: Layer I — Empirically Supported Observations -->
+        <div class="card">
+            <div class="section-wrap">
+                <span class="section-number">III</span>
+                <div class="content">
+                    <h2>Layer I — Empirically Supported Observations</h2>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Observation</th>
+                                    <th>Citation</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Molecular</td>
+                                    <td>Obelisks exist as ~1-kb circular RNAs with predicted rod-like structures</td>
+                                    <td>Zheludev et al., 2024</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Molecular</td>
+                                    <td>Some Obelisks encode Oblin proteins</td>
+                                    <td>Zheludev et al., 2024</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Embryology</td>
+                                    <td>The gut forms first in embryological development</td>
+                                    <td>Kim et al., 2003</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Embryology</td>
+                                    <td>The ENS forms during early embryonic development (Week 4)</td>
+                                    <td>Wallace & Burns, 2005; Furness, 2006</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Neuroscience</td>
+                                    <td>The ENS is an extensive autonomous neural network (~500M neurons)</td>
+                                    <td>Furness, 2006, 2012</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Neuroscience</td>
+                                    <td>The vagus nerve contains ~80% afferent fibers</td>
+                                    <td>Berthoud & Neuhuber, 2000</td>
+                                    <td><span class="status-badge status-anatomy">Anatomical</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Consciousness</td>
+                                    <td>NDEs are documented phenomenological events</td>
+                                    <td>Greyson, 1983; van Lommel, 2001</td>
+                                    <td><span class="status-badge status-observed">Observed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Consciousness</td>
+                                    <td>NDE neurobiological mechanism remains unresolved</td>
+                                    <td>Greyson & Pehlivanova, 2025</td>
+                                    <td><span class="status-badge status-assessment">Assessment</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Consciousness</td>
+                                    <td>NDE phenomenology may vary with birth modality</td>
+                                    <td>Hashemi et al., 2023; Wistrand, 2012</td>
+                                    <td><span class="status-badge status-prelim">Preliminary</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: The Obelisk Hypothesis -->
+        <div class="card" style="border-left-color: #F59E0B;">
+            <div class="section-wrap">
+                <span class="section-number">IV</span>
+                <div class="content">
+                    <h2>The Obelisk Hypothesis</h2>
+
+                    <div class="hypothesis-box">
+                        <p style="font-size:1.1rem; font-weight:600; color:var(--navy-900);">
+                            Central Hypothesis
+                        </p>
+                        <p>
+                            <strong>Obelisks constitute a newly characterized class of microbiome-associated RNA structures whose biological function remains unresolved; this manuscript proposes and operationalizes a testable hypothesis that Obelisk-associated processes could participate in enteric information processing relevant to consciousness-related phenomenology.</strong>
+                        </p>
+                    </div>
+
+                    <h3 style="margin-top:20px;">Proposed Mechanism (Hypothesis)</h3>
+                    <div class="eq-box" style="text-align:left; font-family:'Source Sans 3',sans-serif; font-size:0.9rem; line-height:2;">
+                        SCALAR FIELD (Hypothesized)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                        OBELISK (Proposed coupling — REQUIRES TESTING)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                        ENS NEURONS (Hypothesized as primary receiver — REQUIRES TESTING)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                        VAGUS NERVE (Candidate transmission route — HYPOTHESIZED)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                        BRAINSTEM (Relay station — ESTABLISHED)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                        HEAD-BRAIN (Secondary translator — HYPOTHESIZED)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                        CONSCIOUS EXPERIENCE (Reconstructed phenomenology — OBSERVED)
+                    </div>
+
+                    <h3 style="margin-top:20px;">Operational Definition</h3>
+                    <div class="blockquote" style="border-left-color: var(--navy-700); background: var(--navy-50);">
+                        “The term ‘quantum-biological antenna’ is used here as a mechanistic hypothesis referring to a proposed coupling between Obelisk-associated RNA structure and a physically measurable biological signal. The manuscript does not claim that such coupling has yet been demonstrated.”
+                        <div class="attribution">— Christopher Macachor</div>
+                    </div>
+                    <p style="margin-top:8px;">
+                        <strong>No quantum-antennal function is claimed as established by this manuscript.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: Distinguishing Observation from Hypothesis -->
+        <div class="card">
+            <div class="section-wrap">
+                <span class="section-number">V</span>
+                <div class="content">
+                    <h2>Distinguishing Observation from Hypothesis</h2>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Statement</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Obelisks exist as ~1-kb circular RNAs</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Obelisks have predicted rod-like structures</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>The ENS is an autonomous neural network</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>The vagus is ~80% afferent</td>
+                                    <td><span class="status-badge status-established">Established</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Obelisks may participate in enteric information processing</td>
+                                    <td><span class="status-badge status-hypothesis">Hypothesis</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Obelisks function as quantum antennas</td>
+                                    <td><span class="status-badge status-hypothesis">Hypothesis</span></td>
+                                </tr>
+                                <tr>
+                                    <td>The ENS is the primary receiver of consciousness</td>
+                                    <td><span class="status-badge status-hypothesis">Hypothesis</span></td>
+                                </tr>
+                                <tr>
+                                    <td>The head-brain is a secondary translator</td>
+                                    <td><span class="status-badge status-hypothesis">Hypothesis</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB: FALSIFICATION                                            -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-falsification">
+    <div class="container">
+
+        <div class="card" style="border-left-color: #EF4444;">
+            <h2>Falsification Program</h2>
+            <p>
+                The Obelisk Hypothesis is presented as a <strong>testable, falsifiable</strong> scientific framework.
+                Each prediction has a defined falsification criterion.
+            </p>
+
+            <!-- Prediction 1 -->
+            <div class="card" style="border-left-color: #3B82F6; margin-top:16px;">
+                <h3 style="margin-top:0;">Prediction 1 — Obelisk Abundance and Neural State</h3>
+                <p>
+                    Measure Obelisk abundance in human intestinal samples and simultaneously measure ENS-related physiological markers.
+                </p>
+                <p><strong>Prediction:</strong> Obelisk-positive and Obelisk-negative microbiomes should exhibit reproducible differences in enteric signaling.</p>
+                <div style="background:#FEF2F2;padding:12px;border-radius:6px;border-left:4px solid #EF4444;margin-top:8px;">
+                    <strong>Falsification:</strong> No reproducible differences after controlling for microbial-load effects.
+                </div>
+            </div>
+
+            <!-- Prediction 2 -->
+            <div class="card" style="border-left-color: #3B82F6; margin-top:16px;">
+                <h3 style="margin-top:0;">Prediction 2 — Obelisk Perturbation</h3>
+                <p>
+                    Use an appropriate experimental microbial system to increase or suppress a specific Obelisk-host association.
+                </p>
+                <p><strong>Prediction:</strong> Perturbation should produce measurable changes in enteric signaling independent of ordinary microbial-load effects.</p>
+                <div style="background:#FEF2F2;padding:12px;border-radius:6px;border-left:4px solid #EF4444;margin-top:8px;">
+                    <strong>Falsification:</strong> No Obelisk-dependent changes in enteric signaling.
+                </div>
+            </div>
+
+            <!-- Prediction 3 -->
+            <div class="card" style="border-left-color: #3B82F6; margin-top:16px;">
+                <h3 style="margin-top:0;">Prediction 3 — RNA Structure</h3>
+                <p>
+                    Determine experimentally whether the predicted Obelisk structures exist in vivo rather than relying solely on computational predictions.
+                </p>
+                <p><strong>Prediction:</strong> Experimental structure determination confirms rod-like conformations.</p>
+                <div style="background:#FEF2F2;padding:12px;border-radius:6px;border-left:4px solid #EF4444;margin-top:8px;">
+                    <strong>Falsification:</strong> In vivo structures differ from predictions.
+                </div>
+            </div>
+
+            <!-- Prediction 4 -->
+            <div class="card" style="border-left-color: #3B82F6; margin-top:16px;">
+                <h3 style="margin-top:0;">Prediction 4 — Electromagnetic/Quantum Mechanism</h3>
+                <p>
+                    If the antenna hypothesis is retained, specify the predicted frequency range, coupling mechanism, coherence lifetime, measurable physical observable, and expected signal-to-noise ratio.
+                </p>
+                <p><strong>Prediction:</strong> A reproducible physical signal is detectable.</p>
+                <div style="background:#FEF2F2;padding:12px;border-radius:6px;border-left:4px solid #EF4444;margin-top:8px;">
+                    <strong>Falsification:</strong> No reproducible signal above noise.
+                </div>
+            </div>
+
+            <!-- Prediction 5 -->
+            <div class="card" style="border-left-color: #3B82F6; margin-top:16px;">
+                <h3 style="margin-top:0;">Prediction 5 — Birth-Modality Hypothesis</h3>
+                <p>
+                    Pre-register: <strong>birth modality → NDE phenomenological dimensions</strong>, controlling for age, sex, cardiac-arrest circumstances, hypoxia duration, medications, cultural background, prior NDE expectations, memory characteristics, trauma, and time since event.
+                </p>
+                <p><strong>Prediction:</strong> Birth modality predicts NDE phenomenology after covariate adjustment.</p>
+                <div style="background:#FEF2F2;padding:12px;border-radius:6px;border-left:4px solid #EF4444;margin-top:8px;">
+                    <strong>Falsification:</strong> No association after covariate adjustment.
+                </div>
+            </div>
+
+            <!-- Explicit Falsification Statement -->
+            <div class="falsification-box" style="margin-top:24px;">
+                <p style="font-weight:700; color:#991B1B;">
+                    Explicit Falsification Statement
+                </p>
+                <p>
+                    <strong>A failure to detect Obelisk-dependent enteric effects would count against the Obelisk–ENS mechanism.</strong>
+                    <strong>A failure of birth modality to predict NDE phenomenology after preregistered adjustment would count against the Perinatal Imprint Hypothesis.</strong>
+                    <strong>A failure to identify a reproducible physical coupling mechanism would count against the quantum-antenna interpretation.</strong>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB: REFERENCES                                               -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-references">
+    <div class="container">
+
+        <div class="card">
+            <h2>References</h2>
+
+            <div style="font-size:0.9rem; line-height:2;">
+
+                <p><strong>1.</strong> AWARE Study. (2014). AWAreness during REsuscitation. <em>Resuscitation</em>, 85(12), 1799-1805.</p>
+
+                <p><strong>2.</strong> Berthoud, H.R., & Neuhuber, W.L. (2000). Functional and chemical anatomy of the afferent vagal system. <em>Autonomic Neuroscience</em>, 85(1-3), 1-17.</p>
+
+                <p><strong>3.</strong> Boroujeni, M.E., & Gardaneh, M. (2017). Umbilical cord: an unlimited source of cells differentiable towards dopaminergic neurons. <em>Neural Regeneration Research</em>, 12(7), 1186-1192.</p>
+
+                <p><strong>4.</strong> Burant, C.F., et al. (1992). Fructose transporter in human spermatozoa and small intestine is GLUT5. <em>Journal of Biological Chemistry</em>, 267(21), 14523-14526.</p>
+
+                <p><strong>5.</strong> Furness, J.B. (2006). The enteric nervous system. <em>Neurogastroenterology and Motility</em>, 18(1), 1-5.</p>
+
+                <p><strong>6.</strong> Furness, J.B. (2012). <em>The Enteric Nervous System</em> (2nd ed.). Hoboken: Wiley-Blackwell.</p>
+
+                <p><strong>7.</strong> Furness, J.B., & Stebbing, M.J. (2018). The first brain: Species comparisons and evolutionary implications for the enteric and central nervous systems. <em>Neurogastroenterology and Motility</em>, 30(2), e13234. doi:10.1111/nmo.13234.</p>
+
+                <p><strong>8.</strong> Greyson, B. (1983). The Near-Death Experience Scale: Construction, reliability, and validity. <em>Journal of Nervous and Mental Disease</em>, 171(6), 369-375.</p>
+
+                <p><strong>9.</strong> Greyson, B., & Pehlivanova, M. (2025). A neuroscientific model of near-death experiences reconsidered. <em>Psychology of Consciousness: Theory, Research, and Practice</em>. Advance online publication. doi:10.1037/cns0000448.</p>
+
+                <p><strong>10.</strong> Hashemi, A., et al. (2023). Explanation of near-death experiences. <em>Frontiers in Psychology</em>, 14, 1048929.</p>
+
+                <p><strong>11.</strong> Kaneuchi, T., Wolfner, M.F., & Aigaki, T. (2015). Egg activation in Drosophila is triggered by mechanical forces that cause calcium entry. <em>Molecular Reproduction and Development</em>, 82, 501.</p>
+
+                <p><strong>12.</strong> Mukai, T., et al. (2018). Umbilical cord-derived mesenchymal stromal cells contribute to neuroprotection in neonatal cortical neurons damaged by oxygen-glucose deprivation. <em>Frontiers in Neurology</em>, 9, 466.</p>
+
+                <p><strong>13.</strong> Nature Reviews Microbiology. (2024). Microbiome-colonizing RNAs. <em>Nature Reviews Microbiology</em>.</p>
+
+                <p><strong>14.</strong> Parnia, S., et al. (2014). AWARE-AWAreness during REsuscitation-a prospective study. <em>Resuscitation</em>, 85(12), 1799-1805.</p>
+
+                <p><strong>15.</strong> Tapia, R., et al. (2019). Sperm Flagellar 1 Binds Actin in Intestinal Epithelial Cells and Contributes to Formation of Filopodia and Lamellipodia. <em>Gastroenterology</em>, 157(6), 1544-1555.e3.</p>
+
+                <p><strong>16.</strong> van Lommel, P., et al. (2001). Near-death experience in survivors of cardiac arrest: A prospective study in the Netherlands. <em>The Lancet</em>, 358(9298), 2039-2045.</p>
+
+                <p><strong>17.</strong> Wallace, A.S., & Burns, A.J. (2005). Development of the enteric nervous system, smooth muscle and interstitial cells of Cajal in the human gastrointestinal tract. <em>Cell and Tissue Research</em>, 319, 367-382.</p>
+
+                <p><strong>18.</strong> Wistrand, K. (2012). NDEs among women during childbirth. <em>Journal of Transpersonal Research</em>, 4, 82-98.</p>
+
+                <p><strong>19.</strong> Zheludev, I.N., et al. (2024). Viroid-like colonists of human microbiomes. <em>Cell</em>, 187(23), 6521-6536.e18. doi:10.1016/j.cell.2024.09.033.</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                         -->
+<!-- ============================================================ -->
+<footer class="footer">
+    <div class="container">
+        <p>
+            <strong style="color:var(--gold-500);">Ω-FRAG-007</strong>
+            — The Obelisk Hypothesis: A Testable Enteric Model of Consciousness-Related Phenomenology
+        </p>
+        <p style="color:#8AA8D0; font-size:0.8rem; margin-top:4px;">
+            Version v10.2 · 2026-08-21 · DOI:
+            <a href="https://doi.org/10.5281/zenodo.22037288">10.5281/zenodo.22037288</a>
+            · License: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+        </p>
+        <p style="color:#8AA8D0; font-size:0.8rem; margin-top:4px;">
+            <em>“Macachor is a structural discovery of fragmented science.”</em>
+            — Christopher Macachor
+        </p>
+    </div>
+</footer>
+
+<!-- ============================================================ -->
+<!-- JAVASCRIPT                                                     -->
+<!-- ============================================================ -->
+<script>
+    // =============================================================
+    // TAB SWITCHING
+    // =============================================================
+    const buttons = document.querySelectorAll('#tabNav button');
+    const contents = {
+        abstract: document.getElementById('tab-abstract'),
+        full: document.getElementById('tab-full'),
+        falsification: document.getElementById('tab-falsification'),
+        references: document.getElementById('tab-references')
+    };
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            buttons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            Object.values(contents).forEach(c => {
+                if (c) c.classList.remove('active');
+            });
+            const tab = this.dataset.tab;
+            if (contents[tab]) {
+                contents[tab].classList.add('active');
+            }
+            window.location.hash = tab;
+        });
+    });
+
+    window.addEventListener('hashchange', function() {
+        const hash = window.location.hash.replace('#', '');
+        if (hash && contents[hash]) {
+            const targetBtn = document.querySelector(`#tabNav button[data-tab="${hash}"]`);
+            if (targetBtn) targetBtn.click();
+        }
+    });
+
+    window.addEventListener('load', function() {
+        const hash = window.location.hash.replace('#', '');
+        if (hash && contents[hash]) {
+            const targetBtn = document.querySelector(`#tabNav button[data-tab="${hash}"]`);
+            if (targetBtn) targetBtn.click();
+        }
+    });
+
+    // =============================================================
+    // DOWNLOAD HTML
+    // =============================================================
+    function downloadHTML() {
+        const doctype = '<!DOCTYPE html>\n';
+        const html = document.documentElement.outerHTML;
+        const fullHtml = doctype + html;
+        const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Omega-FRAG-007_Obelisk_Hypothesis_v10.2.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+</body>
+</html>
