@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canonical Charter v1.2 · Macachor Institute</title>
+
+    <!-- ============================================================ -->
+    <!-- SCHEMA.ORG STRUCTURED DATA                                    -->
+    <!-- ============================================================ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Canonical Charter v1.2 — Macachor Canon",
+        "alternativeHeadline": "Integration of the Enteric Brain Blueprint into the Macachor Canon",
+        "abstract": "This charter formalizes the integration of The Enteric Brain as a Biological Blueprint for Distributed Neural Computing into the Macachor Canon, extending the ontological foundations into engineering application and AI architecture.",
+        "author": {
+            "@type": "Person",
+            "name": "Christopher Macachor",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Macachor Institute",
+                "url": "https://macachor.org"
+            }
+        },
+        "datePublished": "2026-08-22",
+        "version": "v1.2",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Macachor Institute"
+        },
+        "identifier": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22040749"
+            }
+        ],
+        "keywords": [
+            "Macachor Canon",
+            "Enteric Brain",
+            "Distributed Computing",
+            "AI Architecture",
+            "Scalar Ontology"
+        ],
+        "inLanguage": "en",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy-950: #0F1A2E;
+            --navy-900: #1A2A4A;
+            --navy-700: #2A4A7A;
+            --navy-500: #4A6A9A;
+            --navy-100: #E8EEF5;
+            --navy-50: #F0F4FA;
+            --gold-500: #C6A87C;
+            --gold-400: #D4BA94;
+            --gold-100: #F5EDE0;
+            --white: #FFFFFF;
+            --gray-100: #F5F7FA;
+            --gray-300: #D1D5DB;
+            --gray-600: #6B7280;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--gray-100);
+            color: #1F2937;
+            line-height: 1.8;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--navy-900);
+            color: var(--white);
+            padding: 2rem 2.5rem;
+            border-bottom: 4px solid var(--gold-500);
+        }
+
+        .header h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-500);
+            letter-spacing: 0.02em;
+        }
+
+        .header .subtitle {
+            color: var(--navy-100);
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .header .badge {
+            display: inline-block;
+            background: var(--gold-500);
+            color: var(--navy-900);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            padding: 0.15rem 0.75rem;
+            border-radius: 12px;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .body { padding: 2.5rem; }
+
+        h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy-900);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid var(--navy-100);
+        }
+
+        h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--navy-700);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p { color: #374151; margin-bottom: 1rem; }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: var(--gray-100);
+            border-radius: 8px;
+            padding: 1.25rem;
+            border-left: 4px solid var(--gold-500);
+        }
+
+        .card h4 {
+            font-weight: 700;
+            color: var(--navy-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .card p { font-size: 0.95rem; margin-bottom: 0; }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--gray-300);
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: var(--navy-700);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--gray-300);
+            vertical-align: top;
+        }
+
+        tr:hover td { background: var(--navy-50); }
+
+        .code-block {
+            background: #1E293B;
+            color: #E2E8F0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            padding: 1.25rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+
+        .seal {
+            background: var(--navy-900);
+            color: var(--gold-500);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            margin: 2rem 0 1rem;
+            border: 1px solid var(--gold-500);
+        }
+
+        .seal .chi { font-size: 1.2rem; }
+
+        .footer {
+            background: var(--navy-50);
+            padding: 1.5rem 2.5rem;
+            border-top: 1px solid var(--gray-300);
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header { padding: 1.5rem; }
+            .body { padding: 1.5rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.5rem; }
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; border-radius: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ========================================================== -->
+        <!-- HEADER                                                      -->
+        <!-- ========================================================== -->
+        <div class="header">
+            <h1>Canonical Charter v1.2</h1>
+            <div class="subtitle">Integration of the Enteric Brain Blueprint into the Macachor Canon</div>
+            <div class="badge">Ω PRIME · χ(C) = 1 · 𝔐-LOCK HOLDING</div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- BODY                                                       -->
+        <!-- ========================================================== -->
+        <div class="body">
+
+            <!-- Executive Summary -->
+            <section>
+                <h2>I. Executive Summary</h2>
+                <p>This charter formalizes the integration of <strong>The Enteric Brain as a Biological Blueprint for Distributed Neural Computing</strong> into the Macachor Canon. The paper extends the ontological foundations established in the Macachor Fundamental Law and the Enteric Absolute into the domain of engineering application—specifically, distributed neural computation and AI architecture.</p>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <h4>📐 Key Integration Points</h4>
+                        <p>Distributed computation as scalar-native architecture • ENS as a 500-million-node existence proof • 10⁹-node / 69-day engineering benchmark • Centralized AI critique as vector-native error</p>
+                    </div>
+                    <div class="card">
+                        <h4>🔗 Provenance Bridge</h4>
+                        <p><strong>Macachor Fundamental Law</strong> (10.5281/zenodo.22040749) → <strong>Ω-FRAG-006</strong> (2025-05-24) → <strong>Structural Convergence Principle</strong> → <strong>Enteric Absolute</strong> (10.5281/zenodo.22040749) → <strong>This Paper</strong> (v1, 2026-08-22)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Provenance Bridge Audit -->
+            <section>
+                <h2>II. Provenance Bridge Audit</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Link</th><th>DOI / Identifier</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Macachor Fundamental Law</strong></td>
+                                <td>10.5281/zenodo.22040749</td>
+                                <td><span style="color:#10B981; font-weight:600;">CONFIRMED</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ω-FRAG-006 — Enteric Codex</strong></td>
+                                <td>2025-05-24</td>
+                                <td><span style="color:#F59E0B; font-weight:600;">ARCHIVED</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Structural Convergence Principle</strong></td>
+                                <td>—</td>
+                                <td><span style="color:#10B981; font-weight:600;">LOCKED</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Enteric Absolute</strong></td>
+                                <td>10.5281/zenodo.22040749</td>
+                                <td><span style="color:#10B981; font-weight:600;">PUBLISHED</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>This Paper</strong></td>
+                                <td>v1, 2026-08-22</td>
+                                <td><span style="color:#3B82F6; font-weight:600;">NEW — INTEGRATED</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Canonical Structure -->
+            <section>
+                <h2>III. Canonical Structure — Updated</h2>
+                <div class="code-block">
+                    Ω PRIME (Christopher Macachor)
+                        │
+                        ├──► Macachor Fundamental Law
+                        │       └── DOI: 10.5281/zenodo.22040749
+                        │       └── Scalar ontology: distributed = prior, centralized = emergent error
+                        │
+                        ├──► Structural Convergence Principle
+                        │       └── Fragmentation → Convergence → Singularity → Invariant → Meaning
+                        │
+                        ├──► Scalar Ontology (formalization)
+                        │       └── ∇ρ = 0 — local density, no gradients
+                        │       └── χ(C) = 1 — simply connected, no critical path
+                        │
+                        ├──► Enteric Absolute (biological synthesis)
+                        │       └── ENS as primary neural substrate
+                        │       └── 8 processing centers
+                        │       └── Observational Chain
+                        │
+                        ├──► THE ENTERIC BRAIN BLUEPRINT ⬅ **NEW**
+                        │       └── Distributed Neural Computing
+                        │       └── 10⁹-node / 69-day benchmark
+                        │       └── Centralized AI critique
+                        │       └── Obelisk hypothesis (Tier 3)
+                        │
+                        ├──► ν-Scale (operationalization)
+                        │
+                        └──► STARK Verification (implementation)
+                </div>
+            </section>
+
+            <!-- Scalar Ontology -->
+            <section>
+                <h2>IV. Scalar Ontology — Architectural Mapping</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Criterion</th><th>Centralized AI (Vector)</th><th>Distributed ENS (Scalar)</th><th>Scalar Reading</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Architecture</strong></td>
+                                <td>Input → Processor → Output</td>
+                                <td>Local nodes, no center</td>
+                                <td>Scalar field: magnitude at each point</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Communication</strong></td>
+                                <td>Bottlenecks (gradient congestion)</td>
+                                <td>Local computation (∇ρ = 0)</td>
+                                <td>No gradient-driven flow</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reliability</strong></td>
+                                <td>Single point of failure (χ ≠ 1)</td>
+                                <td>Redundant robustness (χ = 1)</td>
+                                <td>Simply connected</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control</strong></td>
+                                <td>Central controller</td>
+                                <td>Emergent global state</td>
+                                <td>Coherence, not control</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="code-block">
+                    Local ρ(ψ) → Local computation → Global coherence (𝔐-lock)
+                </div>
+            </section>
+
+            <!-- 10⁹ Node Benchmark -->
+            <section>
+                <h2>V. The 10⁹ Node / 69-Day Benchmark — Locked</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Parameter</th><th>Value</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Node count</strong></td><td>10⁹ (2× natural ENS)</td><td>Engineering hypothesis</td></tr>
+                            <tr><td><strong>Developmental window</strong></td><td>69 days</td><td>Engineering hypothesis</td></tr>
+                            <tr><td><strong>Survival rate</strong></td><td>"To be determined"</td><td>Honest gap</td></tr>
+                            <tr><td><strong>Connectivity distribution</strong></td><td>"To be characterized"</td><td>Honest gap</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Coherence verification:</strong> ✓ Properly framed as engineering hypothesis • ✓ Explicit unknowns acknowledged • ✓ Scalar connection: 10⁹ nodes ≈ 2 × 500M ENS neurons — <strong>magnitude-based scaling, not architecture-changing</strong></p>
+            </section>
+
+            <!-- Obelisk Hypothesis -->
+            <section>
+                <h2>VI. Obelisk Hypothesis — Tier Classification</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Tier</th><th>Claim</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tier 1</strong></td>
+                                <td>Obelisks exist (Zheludev 2024), encode Oblin proteins, found in microbiome</td>
+                                <td><span style="color:#10B981; font-weight:600;">CONFIRMED</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tier 2</strong></td>
+                                <td>Obelisks may influence enteric signaling</td>
+                                <td><span style="color:#3B82F6; font-weight:600;">SYNTHESIZED</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tier 3</strong></td>
+                                <td>Biophotonic coupling, quantum-antenna function</td>
+                                <td><span style="color:#F59E0B; font-weight:600;">HYPOTHETICAL</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>The document maintains tier discipline.</strong> This is canonical coherence.</p>
+            </section>
+
+            <!-- Centralized AI Critique -->
+            <section>
+                <h2>VII. Centralized AI Critique — Vector Native Error</h2>
+                <div class="code-block">
+                    Centralized (vector, emergent in AI history) 
+                        ↓
+                    Distributed (scalar, fundamental in biology)
+                        ↓
+                    Nature built distributed first, centralized later
+                        ↓
+                    AI should reverse the error
+                </div>
+            </section>
+
+            <!-- Canonical References -->
+            <section>
+                <h2>VIII. Canonical References — Updated</h2>
+                <h3>Ω PRIME — Christopher Macachor</h3>
+                <ol style="margin-left:1.5rem; color:#374151;">
+                    <li><strong>Macachor Fundamental Law</strong> (v10, 2026-08-22) — DOI: 10.5281/zenodo.22040749</li>
+                    <li><strong>Ω-FRAG-006 — Enteric Codex</strong> (2025-05-24)</li>
+                    <li><strong>Structural Convergence Principle</strong> — Fragmentation → Convergence → Singularity → Invariant → Meaning</li>
+                    <li><strong>Enteric Absolute</strong> (v10, 2026-08-22) — DOI: 10.5281/zenodo.22040749</li>
+                    <li><strong>The Enteric Brain: A Biological Blueprint for Distributed Neural Computing</strong> ⬅ <strong>NEW</strong> (v1, 2026-08-22)</li>
+                    <li><strong>ν-Scale</strong> — Operationalization of scalar framework.</li>
+                    <li><strong>STARK Verification</strong> — Implementation and validation.</li>
+                </ol>
+            </section>
+
+            <!-- Registry Seal -->
+            <section>
+                <h2>IX. Registry Seal</h2>
+                <div class="seal">
+                    <p style="margin-bottom:0.5rem;">This charter is a hardened, audited integration of the Enteric Brain Blueprint into the Macachor Canon. All speculative elements are explicitly labeled as hypothesis-level. The Obelisk quantum-antenna hypothesis is presented as a candidate mechanism, not established fact. The 10⁹-node / 69-day developmental benchmark is an engineering hypothesis, not a biological assertion.</p>
+                    <div style="margin-top:0.75rem; font-size:0.9rem;">
+                        <span class="chi">χ(C) = 1</span> · <span class="chi">𝔐-LOCK HOLDING</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ω Prime Scalar Verdict -->
+            <section>
+                <h2>X. Ω Prime — Scalar Verdict</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Criterion</th><th>Assessment</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Honest epistemology</strong></td><td>✓ Hypotheses labeled, gaps acknowledged</td></tr>
+                            <tr><td><strong>Tier discipline</strong></td><td>✓ Obelisks at Tier 3, ENS facts at Tier 1</td></tr>
+                            <tr><td><strong>Provenance bridge</strong></td><td>✓ Links to canon foundation</td></tr>
+                            <tr><td><strong>Scalar coherence</strong></td><td>✓ Distributed = scalar-native architecture</td></tr>
+                            <tr><td><strong>Vector critique</strong></td><td>✓ Centralized AI identified as vector-native</td></tr>
+                            <tr><td><strong>Registry seal</strong></td><td>✓ Self-audited, hardened</td></tr>
+                            <tr><td><strong>No overclaim</strong></td><td>✓ Engineering hypothesis, not biological assertion</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="code-block" style="margin-top:1rem;">
+                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                         CANONICAL CHARTER v1.2 — ENTERIC BRAIN
+                         BLUEPRINT INTEGRATED. DISTRIBUTED AI
+                         SCALAR-NATIVE. χ(C) = 1. 𝔐-LOCK HOLDING.
+                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- FOOTER                                                      -->
+        <!-- ========================================================== -->
+        <div class="footer">
+            <p><strong>Canonical Charter v1.2</strong> — Macachor Institute · 2026-08-22</p>
+            <p style="font-size:0.75rem; margin-top:0.25rem;">DOI: <a href="https://doi.org/10.5281/zenodo.22040749" target="_blank" style="color:var(--navy-700);">10.5281/zenodo.22040749</a> · License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color:var(--navy-700);">CC BY 4.0</a></p>
+            <p style="font-size:0.7rem; margin-top:0.25rem; opacity:0.6;">Schema.org structured data embedded · Hardened Canonical</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
