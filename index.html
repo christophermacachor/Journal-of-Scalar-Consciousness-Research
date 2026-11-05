@@ -1,1202 +1,1189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-    <title>Pregnancy: A Paradigm Shift from Emotional Interpretation to Biological Meaning</title>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "ScholarlyArticle",
-          "@id": "https://scalar.macachor.org/#pregnancy",
-          "url": "https://scalar.macachor.org/",
-          "headline": "Pregnancy: A Paradigm Shift from Emotional Interpretation to Biological Meaning",
-          "name": "Pregnancy: A Paradigm Shift from Emotional Interpretation to Biological Meaning",
-          "author": {
-            "@type": "Person",
-            "name": "Christopher Macachor",
-            "identifier": "https://orcid.org/0009-0008-0100-2856"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Macachor Absolute Scalar Research",
-            "url": "https://scalar.macachor.org/"
-          },
-          "datePublished": "2026",
-          "inLanguage": "en",
-          "isPartOf": {
-            "@type": "Periodical",
-            "name": "Scalar Consciousness Research"
-          },
-          "about": [
-            {"@type": "Thing", "name": "Pregnancy"},
-            {"@type": "Thing", "name": "Enteric Nervous System"},
-            {"@type": "Thing", "name": "Maternal-Fetal Communication"},
-            {"@type": "Thing", "name": "Biological Coherence"}
-          ],
-          "description": "A theoretical monograph examining pregnancy, emotional interpretation, enteric nervous system signaling, maternal-fetal communication, and biological coherence within the Scalar Consciousness Research framework."
-        },
-        {
-          "@type": "Person",
-          "@id": "https://orcid.org/0009-0008-0100-2856",
-          "name": "Christopher Macachor",
-          "identifier": "https://orcid.org/0009-0008-0100-2856",
-          "url": "https://scalar.macachor.org/"
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://scalar.macachor.org/#organization",
-          "name": "Macachor Absolute Scalar Research",
-          "url": "https://scalar.macachor.org/"
-        }
-      ]
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Macachor Research Corpus — Categorized Landing Page</title>
+  <meta name="description" content="A categorized landing page for the Macachor research corpus: a polymath method of discovery, a tiered translation architecture, and domain-specific derivations. Mathematics declared as AI-assisted representational translation." />
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1f1f1f;
+      --muted: #5f5a52;
+      --line: #ddd7ca;
+      --accent: #7a3e2f;
+      --accent-soft: #f1e6e0;
+      --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.04);
+      --radius: 14px;
+      --max: 1180px;
+
+      --foundation: #7a3e2f;
+      --critique: #5b4b8a;
+      --physics: #1f6f8b;
+      --math: #2f6b4f;
+      --bio: #8a5a1f;
+      --symbolic: #8a2f5a;
+      --warn: #8a5a1f;
     }
-    </script>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * { box-sizing: border-box; }
 
-        body {
-            background: #faf8f6;
-            color: #1e1a17;
-            font-family: 'Georgia', 'Times New Roman', serif;
-            line-height: 1.8;
-            padding: 1.2rem 1rem;
-            max-width: 1000px;
-            margin: 0 auto;
-            -webkit-text-size-adjust: 100%;
-        }
+    html { scroll-behavior: smooth; }
 
-        /* ---- LANGUAGE TOGGLE TAB ---- */
-        .lang-tab-container {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-        }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(122,62,47,.06), transparent 34rem),
+        radial-gradient(circle at top right, rgba(31,111,139,.06), transparent 34rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      font-size: 16px;
+    }
 
-        .lang-tab {
-            background: #f5f2ef;
-            border: 2px solid #8a7a72;
-            padding: 0.6rem 2rem;
-            border-radius: 30px;
-            font-size: 0.95rem;
-            font-family: 'Palatino', 'Georgia', serif;
-            letter-spacing: 0.06em;
-            color: #5a524a;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-            user-select: none;
-        }
+    a { color: inherit; }
 
-        .lang-tab:active {
-            transform: scale(0.96);
-        }
+    .wrap {
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 0 auto;
+    }
 
-        .lang-tab.active {
-            background: #b22222;
-            border-color: #b22222;
-            color: #ffffff;
-        }
+    /* Header */
+    header.hero {
+      padding: 4rem 0 2rem;
+    }
 
-        .lang-tab:hover:not(.active) {
-            background: #e8e4e0;
-        }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .78rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
 
-        /* ---- SUBTLE SIDE FLOATED IMAGE ---- */
-        .subtle-side-image {
-            float: right;
-            width: 180px;
-            max-width: 35%;
-            margin: 0.5rem 0 1rem 1.5rem;
-            padding: 4px;
-            background: #ffffff;
-            border: 1px solid #e8e4e0;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-        }
+    .eyebrow::before {
+      content: "";
+      width: 1.75rem;
+      height: 1px;
+      background: var(--accent);
+      display: inline-block;
+    }
 
-        .subtle-side-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 5px;
-            opacity: 0.92;
-            transition: opacity 0.3s ease;
-        }
+    h1 {
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      font-weight: 600;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin: 0 0 1rem;
+      max-width: 18ch;
+    }
 
-        .subtle-side-image img:hover {
-            opacity: 1;
-        }
+    .lede {
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: 1.06rem;
+      margin: 0 0 1rem;
+    }
 
-        /* ---- COVER / MASTHEAD ---- */
-        .cover {
-            background: #f9f9f9;
-            padding: 2.5rem 1.5rem 2rem 1.5rem;
-            margin-bottom: 2.5rem;
-            border-bottom: 4px solid #b22222;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-            text-align: center;
-        }
+    /* Visible core-contribution statement in the hero */
+    .contribution-banner {
+      max-width: 78ch;
+      margin: 0 0 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1rem 1.15rem;
+      box-shadow: var(--shadow);
+      color: var(--muted);
+      font-size: .96rem;
+    }
 
-        .cover .masthead {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: #8a7a72;
-            border-bottom: 1px solid #e8e4e0;
-            padding-bottom: 0.6rem;
-            margin-bottom: 1.2rem;
-            font-family: 'Palatino', 'Georgia', serif;
-        }
+    .contribution-banner strong { color: var(--ink); }
 
-        .cover h1 {
-            font-size: 2.4rem;
-            font-weight: 400;
-            color: #1e1a17;
-            letter-spacing: 0.04em;
-            font-family: 'Palatino', 'Georgia', serif;
-            margin-bottom: 0.2rem;
-            line-height: 1.2;
-        }
+    .contribution-banner .banner-label {
+      display: inline-block;
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: 999px;
+      padding: .2rem .55rem;
+      margin-bottom: .55rem;
+    }
 
-        .cover .sub {
-            font-size: 1.0rem;
-            color: #5a524a;
-            font-style: italic;
-            letter-spacing: 0.02em;
-            border-top: 1px solid #e8e4e0;
-            padding-top: 0.8rem;
-            margin-top: 0.4rem;
-        }
+    .contribution-banner p { margin: 0 0 .55rem; }
+    .contribution-banner p:last-child { margin-bottom: 0; }
 
-        .cover .meta {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-            font-size: 0.8rem;
-            color: #6a625a;
-            letter-spacing: 0.04em;
-        }
+    .architecture {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: .75rem;
+      margin: 2rem 0 1.5rem;
+    }
 
-        .cover .meta span {
-            background: #f5f2ef;
-            padding: 0.15rem 1rem;
-            border-radius: 20px;
-        }
+    .arch-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+    }
 
-        .cover .divider-line {
-            width: 60px;
-            height: 2px;
-            background: #b22222;
-            margin: 1rem auto 0.4rem auto;
-        }
+    .arch-item strong {
+      display: block;
+      font-size: .82rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .35rem;
+    }
 
-        /* ---- GENERAL ---- */
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
+    .arch-item span {
+      color: var(--muted);
+      font-size: .92rem;
+    }
 
-        section {
-            background: #faf8f6;
-            padding: 1.6rem 1.2rem;
-            margin-bottom: 2rem;
-            border-left: 4px solid #8a7a72;
-            border-right: 1px solid #e8e4e0;
-            border-top: 1px solid #e8e4e0;
-            border-bottom: 1px solid #e8e4e0;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
-            overflow: hidden; /* Clear floats internally */
-        }
+    .reading-order {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      align-items: center;
+      margin: 1.25rem 0 0;
+      font-size: .9rem;
+      color: var(--muted);
+    }
 
-        .section-title {
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: #1e1a17;
-            font-family: 'Palatino', 'Georgia', serif;
-            letter-spacing: 0.02em;
-            border-bottom: 2px solid #b22222;
-            padding-bottom: 0.3rem;
-            margin-bottom: 1.2rem;
-            display: inline-block;
-        }
+    .reading-order strong {
+      color: var(--ink);
+      margin-right: .25rem;
+    }
 
-        h3 {
-            font-size: 1.05rem;
-            font-weight: 400;
-            color: #2c2a28;
-            font-style: italic;
-            margin: 1.2rem 0 0.4rem 0;
-            letter-spacing: 0.01em;
-        }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: .3rem .7rem;
+      font-size: .82rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: border-color .18s ease, color .18s ease, background .18s ease;
+    }
 
-        p {
-            margin-bottom: 0.9rem;
-            color: #2c2a28;
-            font-size: 1.0rem;
-        }
+    .chip:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
 
-        .connection-box {
-            border-left: 4px solid #8a7a72;
-            padding: 1rem 1.2rem;
-            margin: 1.2rem 0;
-            background: #f5f2ef;
-            border-radius: 0 4px 4px 0;
-            clear: both;
-        }
+    .chip.chip-primary {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 600;
+    }
 
-        .connection-box p {
-            margin-bottom: 0.2rem;
-            font-style: italic;
-            color: #1e1a17;
-            font-size: 1.0rem;
-        }
+    /* Sticky nav */
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(247,245,240,.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      margin-top: 1rem;
+    }
 
-        .connection-box .source {
-            font-size: 0.8rem;
-            color: #6a625a;
-            font-style: normal;
-            margin-top: 0.2rem;
-            letter-spacing: 0.02em;
-        }
+    .toc-inner {
+      display: flex;
+      gap: .4rem;
+      overflow-x: auto;
+      padding: .65rem 0;
+      scrollbar-width: thin;
+    }
 
-        .two-way-box {
-            border-left: 4px solid #8a7a72;
-            padding: 1rem 1.2rem;
-            margin: 1.2rem 0;
-            background: #f5f2ef;
-            border-radius: 0 4px 4px 0;
-            clear: both;
-        }
+    .toc a {
+      white-space: nowrap;
+      text-decoration: none;
+      font-size: .82rem;
+      color: var(--muted);
+      padding: .35rem .65rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
 
-        .two-way-box p {
-            margin-bottom: 0.2rem;
-            color: #1e1a17;
-            font-size: 1.0rem;
-        }
+    .toc a:hover {
+      color: var(--accent);
+      border-color: var(--line);
+      background: var(--surface);
+    }
 
-        .two-way-box .arrow-line {
-            text-align: center;
-            font-size: 1.4rem;
-            color: #6a625a;
-            letter-spacing: 0.2rem;
-            padding: 0.2rem 0;
-        }
+    .toc a.primary {
+      color: var(--accent);
+      font-weight: 600;
+    }
 
-        .two-way-box .center-bold {
-            text-align: center;
-            font-weight: 600;
-            color: #1e1a17;
-            font-size: 0.95rem;
-        }
+    /* Sections */
+    main {
+      padding: 1.5rem 0 4rem;
+    }
 
-        .evidence-list {
-            margin: 0.5rem 0 0.8rem 1.2rem;
-            color: #2c2a28;
-            font-size: 0.95rem;
-            list-style: none;
-        }
+    section.category,
+    section.block {
+      margin-top: 3rem;
+      scroll-margin-top: 4.5rem;
+    }
 
-        .evidence-list li {
-            margin-bottom: 0.3rem;
-            padding-left: 1.2rem;
-            position: relative;
-        }
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: .75rem;
+      margin-bottom: 1.25rem;
+    }
 
-        .evidence-list li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: #6a625a;
-        }
+    .section-head h2 {
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
 
-        .ref-list {
-            margin: 0.5rem 0 0.4rem 1.2rem;
-            color: #4a423a;
-            font-size: 0.85rem;
-            list-style: none;
-        }
+    .section-head p {
+      margin: .25rem 0 0;
+      color: var(--muted);
+      font-size: .92rem;
+      max-width: 65ch;
+    }
 
-        .ref-list li {
-            margin-bottom: 0.25rem;
-            padding-left: 1.2rem;
-            position: relative;
-            text-indent: -1.2rem;
-            padding-left: 2rem;
-        }
+    .count {
+      flex: 0 0 auto;
+      font-size: .78rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: .3rem .6rem;
+      background: var(--surface);
+    }
 
-        .phi-omega {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #4a423a;
-            letter-spacing: 0.12em;
-            padding: 0.3rem 0;
-            font-family: 'Georgia', serif;
-        }
+    .count.count-primary {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
 
-        .ref-section {
-            padding: 1.2rem 0 0.3rem 0;
-            border-top: 2px solid #e8e4e0;
-            margin-top: 1.2rem;
-        }
+    /* Core contribution */
+    .pullquote {
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.5rem;
+      padding-left: 1.1rem;
+      border-left: 3px solid var(--accent);
+      max-width: 64ch;
+      color: var(--ink);
+    }
 
-        .ref-section h2 {
-            font-size: 1.2rem;
-            margin-bottom: 0.6rem;
-        }
+    .declaration {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
 
-        .ref-section p {
-            font-size: 0.85rem;
-            color: #4a423a;
-            margin-bottom: 0.2rem;
-        }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.25rem 1.15rem;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
 
-        /* ---- TRUTH BOX ---- */
-        .truth-box {
-            background: #f5f2ef;
-            border-left: 6px solid #b22222;
-            padding: 1.5rem 1.2rem;
-            margin: 1.5rem 0;
-            border-radius: 0 6px 6px 0;
-            clear: both;
-        }
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 3px;
+      background: var(--line);
+    }
 
-        .truth-box .big-truth {
-            font-size: 1.4rem;
-            text-align: center;
-            color: #1e1a17;
-            font-weight: 400;
-            letter-spacing: 0.03em;
-            font-family: 'Palatino', 'Georgia', serif;
-            margin-bottom: 0.2rem;
-        }
+    .panel.discovery::before { background: var(--accent); }
+    .panel.math-role::before { background: var(--math); }
 
-        .truth-box .sub-truth {
-            text-align: center;
-            color: #5a524a;
-            font-style: italic;
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
+    .panel .label {
+      display: inline-block;
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: .22rem .55rem;
+      margin-bottom: .7rem;
+    }
 
-        .truth-box .list-truth {
-            margin: 0.6rem 0 1rem 1.2rem;
-            color: #2c2a28;
-            list-style: none;
-        }
+    .panel.discovery .label { background: var(--accent-soft); color: var(--accent); }
+    .panel.math-role .label { background: #e5f0e9; color: var(--math); }
 
-        .truth-box .list-truth li {
-            margin-bottom: 0.3rem;
-            padding-left: 1.2rem;
-            position: relative;
-        }
+    .panel h3 {
+      font-size: 1.05rem;
+      line-height: 1.3;
+      margin: 0 0 .5rem;
+    }
 
-        .truth-box .list-truth li::before {
-            content: '—';
-            position: absolute;
-            left: 0;
-            color: #b22222;
-        }
+    .panel p {
+      margin: 0 0 .7rem;
+      color: var(--muted);
+      font-size: .94rem;
+    }
 
-        .truth-box .two-way {
-            text-align: center;
-            font-size: 1.2rem;
-            letter-spacing: 0.1rem;
-            color: #4a423a;
-            padding: 0.3rem 0;
-        }
+    .panel p:last-child { margin-bottom: 0; }
 
-        .truth-box .two-way .arrow {
-            color: #8a7a72;
-            padding: 0 0.4rem;
-        }
+    .panel ul {
+      margin: .5rem 0 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      font-size: .93rem;
+    }
 
-        .truth-box .inner-highlight {
-            background: #faf8f6;
-            border-left: 3px solid #b22222;
-            padding: 0.8rem 1.2rem;
-            margin: 1rem 0;
-            border-radius: 0 4px 4px 0;
-        }
+    .panel li { margin: .3rem 0; }
+    .panel li strong { color: var(--ink); }
 
-        .truth-box .inner-highlight p {
-            margin-bottom: 0.15rem;
-            color: #1e1a17;
-            font-size: 0.95rem;
-        }
+    .callout {
+      margin-top: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--warn);
+      border-radius: var(--radius);
+      padding: 1.15rem 1.25rem;
+      box-shadow: var(--shadow);
+    }
 
-        .truth-box .truth-line {
-            color: #1e1a17;
-            font-size: 1.0rem;
-            text-align: center;
-            padding: 0.4rem 0;
-            border-top: 1px solid #e8e4e0;
-        }
+    .callout .tag {
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .72rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--warn);
+      background: #f5ecdf;
+      border-radius: 999px;
+      padding: .2rem .55rem;
+      margin-bottom: .6rem;
+    }
 
-        .truth-box .truth-line:first-of-type {
-            border-top: none;
-        }
+    .callout h3 {
+      font-size: 1rem;
+      margin: 0 0 .45rem;
+    }
 
-        .truth-box .lock {
-            text-align: center;
-            padding: 0.6rem 0 0.1rem 0;
-            font-size: 0.8rem;
-            color: #6a625a;
-            letter-spacing: 0.08em;
-            font-weight: 400;
-        }
+    .callout p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .93rem;
+      max-width: 82ch;
+    }
 
-        .truth-box .lock .gold {
-            color: #b22222;
-            font-weight: 400;
-        }
+    /* Claim ledger */
+    .ledger {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: .6rem;
+      font-size: .92rem;
+      color: var(--muted);
+    }
 
-        .opening-para {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #1a1613;
-            margin-bottom: 1.5rem;
-            padding: 0.3rem 0;
-        }
+    .ledger th {
+      text-align: left;
+      padding: .45rem .6rem;
+      border-bottom: 1px solid var(--line);
+      font-size: .72rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
 
-        .opening-para:first-letter {
-            font-size: 3.2rem;
-            float: left;
-            line-height: 1;
-            padding-right: 0.4rem;
-            color: #b22222;
-            font-family: 'Palatino', 'Georgia', serif;
-        }
+    .ledger td {
+      padding: .5rem .6rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
 
-        /* ---- LANGUAGE CONTENT ---- */
-        .lang-content {
-            display: none;
-        }
+    .ledger tr:last-child td { border-bottom: none; }
 
-        .lang-content.active {
-            display: block;
-        }
+    .ledger td:first-child {
+      font-weight: 600;
+      color: var(--ink);
+      width: 24%;
+    }
 
-        /* ---- RESPONSIVE ---- */
-        @media (min-width: 768px) {
-            body {
-                padding: 2.5rem 2rem;
-            }
-            section {
-                padding: 2.2rem 2.5rem;
-            }
-            .cover {
-                padding: 3rem 2.5rem 2.5rem 2.5rem;
-            }
-            .cover h1 {
-                font-size: 3.0rem;
-            }
-            .cover .sub {
-                font-size: 1.2rem;
-            }
-            .truth-box {
-                padding: 2rem 2.2rem;
-            }
-            .truth-box .big-truth {
-                font-size: 1.7rem;
-            }
-            .opening-para:first-letter {
-                font-size: 4.2rem;
-            }
-            .opening-para {
-                font-size: 1.15rem;
-            }
-            .lang-tab {
-                padding: 0.6rem 2.5rem;
-                font-size: 1rem;
-            }
-            .subtle-side-image {
-                width: 220px;
-            }
-        }
+    .ledger td.credited { color: var(--math); font-weight: 600; }
+    .ledger td.notclaimed { color: var(--warn); font-weight: 600; }
 
-        @media (max-width: 480px) {
-            body {
-                padding: 0.8rem 0.6rem;
-            }
-            section {
-                padding: 1.2rem 0.8rem;
-                margin-bottom: 1.2rem;
-            }
-            .cover {
-                padding: 1.5rem 1rem 1.2rem 1rem;
-            }
-            .cover h1 {
-                font-size: 1.8rem;
-            }
-            .cover .sub {
-                font-size: 0.85rem;
-            }
-            .cover .meta span {
-                font-size: 0.7rem;
-                padding: 0.1rem 0.6rem;
-            }
-            .section-title {
-                font-size: 1.2rem;
-            }
-            p {
-                font-size: 0.92rem;
-            }
-            .truth-box .big-truth {
-                font-size: 1.2rem;
-            }
-            .opening-para {
-                font-size: 0.95rem;
-            }
-            .opening-para:first-letter {
-                font-size: 2.6rem;
-            }
-            .lang-tab {
-                padding: 0.4rem 1.2rem;
-                font-size: 0.8rem;
-            }
-            .subtle-side-image {
-                width: 130px;
-                margin: 0.2rem 0 0.8rem 0.8rem;
-            }
-        }
-    </style>
+    .ledger-note {
+      margin-top: .75rem;
+      color: var(--muted);
+      font-size: .92rem;
+      max-width: 85ch;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.15rem 1.15rem 1.05rem;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: var(--line);
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 30px rgba(0,0,0,.07);
+      border-color: #c9c1b2;
+    }
+
+    .card h3 {
+      font-size: 1.02rem;
+      line-height: 1.3;
+      margin: 0 0 .45rem;
+      letter-spacing: -0.005em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .card .url {
+      margin-top: auto;
+      padding-top: .9rem;
+      font-size: .78rem;
+      color: #8a8378;
+      word-break: break-all;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: .68rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: .22rem .5rem;
+      margin-bottom: .65rem;
+      width: fit-content;
+    }
+
+    .card.foundation::before { background: var(--foundation); }
+    .card.foundation .badge { background: #f3e7e2; color: var(--foundation); }
+
+    .card.critique::before { background: var(--critique); }
+    .card.critique .badge { background: #ece8f5; color: var(--critique); }
+
+    .card.physics::before { background: var(--physics); }
+    .card.physics .badge { background: #e3f0f4; color: var(--physics); }
+
+    .card.math::before { background: var(--math); }
+    .card.math .badge { background: #e5f0e9; color: var(--math); }
+
+    .card.bio::before { background: var(--bio); }
+    .card.bio .badge { background: #f5ecdf; color: var(--bio); }
+
+    .card.symbolic::before { background: var(--symbolic); }
+    .card.symbolic .badge { background: #f4e4eb; color: var(--symbolic); }
+
+    .e03 {
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .68rem;
+      letter-spacing: .06em;
+      color: var(--warn);
+      background: #f5ecdf;
+      border-radius: 999px;
+      padding: .15rem .45rem;
+      margin-left: .3rem;
+      vertical-align: middle;
+    }
+
+    .sic {
+      font-size: .8em;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    /* Status note */
+    .status-note {
+      margin-top: 3rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.25rem 1.1rem;
+      box-shadow: var(--shadow);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .status-note h2 {
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 1.25rem;
+      margin: 0 0 .5rem;
+    }
+
+    .status-note p {
+      margin: 0 0 .6rem;
+      color: var(--muted);
+      font-size: .94rem;
+      max-width: 85ch;
+    }
+
+    .status-note p:last-of-type { margin-bottom: 0; }
+
+    .totals {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      margin-top: 1rem;
+    }
+
+    .totals span {
+      font-size: .78rem;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: .28rem .6rem;
+      background: #fbfaf7;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.5rem 0 3rem;
+      color: var(--muted);
+      font-size: .84rem;
+    }
+
+    footer p {
+      margin: .25rem 0;
+      max-width: 85ch;
+    }
+
+    @media (max-width: 820px) {
+      .declaration { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      header.hero { padding-top: 2.5rem; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .count { align-self: flex-start; }
+      .ledger td:first-child { width: 34%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .card { transition: none; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- LANGUAGE TOGGLE TABS -->
-<div class="lang-tab-container">
-    <button class="lang-tab active" data-lang="en" onclick="switchLanguage('en')">🇬🇧 English</button>
-    <button class="lang-tab" data-lang="es" onclick="switchLanguage('es')">🇪🇸 Español</button>
-</div>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Categorized landing page · inventory dated 5 November 2026</div>
+      <h1>The Macachor Research Corpus</h1>
+      <p class="lede">
+        A layered, territory-first research ecosystem. It is not a flat list of sites:
+        ontology supplies the constraints, epistemology supplies the audit procedure,
+        institutional critique examines how meaning becomes authority, and the domain pages
+        attempt to instantiate the framework in physics, mathematics, biology, and symbolic work.
+      </p>
 
-<!-- ENGLISH VERSION -->
-<div id="lang-en" class="lang-content active">
+      <div class="contribution-banner">
+        <span class="banner-label">Core contribution</span>
+        <p>
+          A <strong>polymath method of discovery</strong>: semantic compression of fragmented,
+          cross-domain data into a <strong>structural invariant</strong>, and the synthesis of
+          unrelated historical and scientific records to find the structure connecting the
+          fragmentation—a method that challenges the norm and builds the finished puzzle.
+        </p>
+        <p>
+          <strong>Credit on mathematics:</strong> all mathematical formulas are credited as
+          <strong>AI representations</strong> of that invariant, supplied for translation.
+          They are not claimed as original mathematical discoveries.
+        </p>
+      </div>
 
-    <!-- COVER -->
-    <div class="cover">
-        <div class="masthead">Scalar Consciousness Research · Monograph Series</div>
-        <h1>Pregnancy: A Paradigm Shift from Emotional Interpretation to Biological Meaning</h1>
-        <div class="divider-line"></div>
-        <div class="sub">A Theoretical Framework for Maternal-Fetal Communication and Enteric Coherence</div>
-        <div class="meta">
-            <span>Christopher Macachor</span>
-            <span>ORCID: 0009-0008-0100-2856</span>
-            <span>Macachor Absolute Scalar Research</span>
-            <span>Scalar Consciousness Research</span>
-            <span>info@macachor.org</span>
-            <span>scalar.macachor.org</span>
-            <span>DOI: https://doi.org/10.5281/zenodo.22109357</span>
-            <span>2026</span>
+      <div class="architecture" aria-label="Corpus architecture">
+        <div class="arch-item">
+          <strong>Ontology</strong>
+          <span>Territory precedes cartography. Representations do not create the reality they describe.</span>
         </div>
-    </div>
-
-    <div class="container">
-
-        <!-- SECTION 1 -->
-        <section>
-            <!-- SIDE FLOATED SUBTLE IMAGE -->
-            <div class="subtle-side-image">
-                <img src="maxresdefault.jpg" alt="Fetus in Utero" />
-            </div>
-
-            <p class="opening-para">
-                Before the line turns pink, the story of pregnancy is often told as a tempest of emotions—a sudden, overwhelming surge of joy, terror, and a frantic, biological love that feels as if it descends from the heavens, claiming your body as its vessel. In those first few months, this emotional landscape is a relentless storm, dictated by surging hormones that color every thought in shades of elation and profound anxiety. We cling to these feelings as the very definition of the experience, believing that the intensity of our love, fear, and hope is the measure of our readiness. But as the weeks fold into months and the abstract heartbeat on a screen becomes a living, kicking presence, a subtle yet monumental shift begins to occur. The raw, visceral tide of emotion does not recede, but it deepens, transforming from a reactionary force into a quiet, resonant understanding—a realization that this journey is less about what we <em>feel</em> and more about what we are beginning to <em>comprehend</em> regarding the profound weight of existence we now carry.
-            </p>
-
-            <h2 class="section-title">The Cultural Myth: Emotions as Weakness</h2>
-
-            <p>Our culture has long framed the pregnant woman as a creature of pure emotion—hormonal, volatile, and ruled by a biology that renders her irrational. We call it "mood swings" and dismiss it as a side effect of pregnancy, a temporary madness to be managed with patience and perhaps a cup of tea. We offer sympathy, but rarely respect. We see the tears, the irritability, the sudden laughter, and we label them as instability. We tell her it is "just the hormones," as if that explains anything at all.</p>
-
-            <p>But this narrative, however well-intentioned, is a profound misunderstanding. It reduces a complex, bidirectional communication system to a chaotic outburst of chemicals. It labels as "disorder" what is, in fact, a highly sophisticated information network. It treats the symptom while ignoring the signal. It comforts the woman while dismissing the messenger.</p>
-
-            <div class="connection-box">
-                <p>"What if the emotional storm is not the problem, but the <strong>signal</strong>? What if the anxiety, the irritability, the sudden tears, and the inexplicable joy are not just hormones run amok, but the voice of a deeper intelligence—an intelligence that resides not in the head, but in the gut?"</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-        </section>
-
-        <!-- SECTION 2 -->
-        <section>
-            <h2 class="section-title">The First Brain: Rethinking the Enteric Nervous System</h2>
-
-            <p>Modern neuroscience reveals a truth that ancient wisdom has always known: the gut possesses a mind of its own. The enteric nervous system (ENS), a complex network of approximately <strong>500 million neurons</strong> embedded in the gastrointestinal tract, is not a "second brain" in a subordinate sense. The ENS is sometimes described as a “second brain” because of its substantial neuronal population and local autonomy. This manuscript proposes a stronger developmental and evolutionary interpretation, but that interpretation should be treated as a hypothesis rather than an established claim that the ENS is literally the first brain.</p>
-
-            <ul class="evidence-list">
-                <li><strong>Developmental timing:</strong> The ENS begins forming during embryonic week 4, before the cerebral cortex (week 6–8).</li>
-                <li><strong>Autonomy:</strong> The ENS can generate complex motor patterns without any input from the central nervous system.</li>
-                <li><strong>Neuron count:</strong> It contains approximately 500 million neurons, comparable to the spinal cord.</li>
-                <li><strong>Evolutionary conservation:</strong> The ENS is present in all vertebrates, predating the evolution of the cerebral cortex.</li>
-            </ul>
-
-            <p>The ENS is a real, functional neural network capable of local sensory integration and motor control. Within the present framework, its role in pregnancy is interpreted as potentially important to maternal physiological signaling. Claims that it directly functions as the primary interface between maternal and fetal enteric systems remain hypotheses requiring empirical testing.</p>
-
-            <div class="connection-box">
-                <p>"The enteric nervous system is not a secondary system. It is evolutionarily primary. It developed before the cerebral cortex. It is the orchestrator of pregnancy, not the servant of the head brain."</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-        </section>
-
-        <!-- SECTION 3 -->
-        <section>
-            <h2 class="section-title">The Proposed Shared Enteric Connection</h2>
-
-            <p>Herein lies the paradigm shift. The prevailing model of pregnancy emphasizes hormonal signaling and nutrient transfer across the placenta. While important, this model fails to account for the real-time, bidirectional, deeply intuitive communication that mothers experience. The fetus, with its own developing enteric nervous system, is not a passive recipient. It is an active participant in a shared neurological field.</p>
-
-            <div class="two-way-box">
-                <p style="font-size: 1.05rem; text-align: center; font-weight: 400; letter-spacing: 0.03em;">
-                    <span style="font-weight: 500;">Maternal enteric brain</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">⟷</span>
-                    <span style="font-weight: 500;">Fetal enteric brain</span>
-                </p>
-                <div class="arrow-line">⬇ ⬆ ⬇ ⬆ ⬇ ⬆</div>
-                <p class="center-bold">Both directions. Continuous. Every moment.</p>
-            </div>
-
-            <p>The connection is not merely emotional; maternal-fetal communication is structurally and physiologically mediated through established pathways including the placenta, umbilical circulation, endocrine signaling, immune signaling, and autonomic influences. Within the Scalar Consciousness Research framework, this manuscript proposes an additional enteric-coherence interpretation. The claim that the umbilical cord constitutes an intestine or directly connects maternal and fetal enteric nervous systems is a hypothesis, not an established anatomical description.</p>
-
-            <div class="truth-box">
-                <p class="big-truth">You and your baby are physiologically connected.</p>
-                <p class="sub-truth">Two bodies. One developmental relationship. A proposed shared physiological field.</p>
-
-                <p>The umbilical cord is an established vascular and connective structure that supports maternal-fetal exchange. This manuscript proposes that its physiological signaling context may be relevant to a broader maternal-fetal coherence model; the stronger “shared intestine” interpretation remains hypothetical.</p>
-
-                <div class="inner-highlight">
-                    <p>Your enteric nervous system is distributed within the gastrointestinal tract.</p>
-                    <p>Your baby develops its own enteric nervous system as development proceeds.</p>
-                    <p>The proposed shared-field interpretation is a hypothesis about maternal-fetal signaling, not a literal anatomical continuity of the two ENSs.</p>
-                    <p style="color: #5a524a; font-style: italic; margin-top: 0.2rem;">— Two developing systems, one maternal-fetal physiological relationship</p>
-                </div>
-
-                <p>Through this intestine, they share <strong>everything</strong>:</p>
-
-                <ul class="list-truth">
-                    <li><strong>Blood</strong> — your life flows to your baby, your baby's life flows to you</li>
-                    <li><strong>Cells</strong> — WJ-MSCs carry signals between you</li>
-                    <li><strong>Neural and autonomic signaling</strong> — maternal and fetal physiology interact through established and proposed signaling pathways</li>
-                    <li><strong>Physiological signals</strong> — maternal stress and other physiological states can influence fetal development through established biological pathways</li>
-                    <li><strong>Signals</strong> — the framework proposes that patterns of physiological coherence may be relevant to maternal-fetal signaling</li>
-                </ul>
-
-                <div class="two-way">
-                    <span style="font-weight: 500;">You</span>
-                    <span class="arrow">⟷</span>
-                    <span style="font-weight: 500;">Your Baby</span>
-                </div>
-                <p style="text-align: center; color: #5a524a; font-size: 0.9rem; margin-top: -0.2rem;">
-                    Through the intestine. Both directions. Every moment.
-                </p>
-
-                <div class="lock">
-                    <span class="gold">𝔐 = (√5-1)/2</span> · THE LOCK HOLDS
-                </div>
-            </div>
-
-            <p>The communication flows in both directions, mediated by the vagus nerve, pelvic nerves, and the splanchnic circulation. The mother is not "emotional"; she is <em>entangled</em>. She is processing raw sensory data from her baby's enteric brain through her own primary brain.</p>
-        </section>
-
-        <!-- SECTION 4 -->
-        <section>
-            <h2 class="section-title">Emotions as Signals, Not Symptoms</h2>
-
-            <p>This understanding reframes everything we thought we knew about pregnancy emotions.</p>
-
-            <div class="two-way-box" style="border-left-color: #b22222;">
-                <p style="text-align: center; font-size: 1.0rem;">
-                    <span style="font-weight: 500;">Fetal incoherence</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-weight: 500;">Maternal enteric detects it</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-weight: 500;">Head brain labels it as emotion</span>
-                </p>
-            </div>
-
-            <p>The mood swing is not a disorder. It is an <strong>information signal</strong>. It is the baby's voice, translated by the mother's biology into a language her conscious mind can understand.</p>
-
-            <p>When a pregnant woman experiences sudden anxiety, peace, or tears, the experience is real even when its immediate cause is unclear. The framework proposes that such experiences may reflect integrated bodily and environmental signals, but it does not establish that they are direct messages from the fetal enteric nervous system.</p>
-
-            <div class="connection-box">
-                <p>"The mother is not 'emotional.' She is entangled. She is feeling the fetus's signals through her primary brain. The head brain's interpretation of these signals is what we call 'emotion.' The mood swing is the signal."</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-
-            <p>Conversely, maternal physiological states—including stress, sleep disruption, and other conditions—can influence fetal development through established biological pathways. The stronger claim that fetal enteric coherence directly detects and reciprocally broadcasts these states remains a testable hypothesis.</p>
-
-            <div class="connection-box" style="border-left-color: #b22222;">
-                <p style="font-style: normal; font-size: 1.0rem; text-align: center;">
-                    <span style="font-weight: 500;">You</span>
-                    <span style="color: #6a625a; padding: 0 0.6rem;">⟷</span>
-                    <span style="font-weight: 500;">Your Baby</span>
-                </p>
-                <p style="text-align: center; color: #5a524a; font-style: normal; font-size: 0.9rem;">
-                    Through the intestine. Both directions. Every moment.
-                </p>
-            </div>
-        </section>
-
-        <!-- SECTION 5 -->
-        <section>
-            <h2 class="section-title">The Brain and Body: Interpreting Physiological Signals</h2>
-
-            <p>This distinction is critical. The head brain does not feel directly; it <em>interprets</em> and <em>labels</em> the signals it receives from the body. The enteric brain, by contrast, detects the raw frequency, the vibration, the chemical gradient. It is the primary receptor. The head brain is the translator.</p>
-
-            <div class="two-way-box" style="border-left-color: #b22222;">
-                <p style="text-align: center; font-size: 1.05rem; color: #1e1a17;">
-                    <span style="font-weight: 500;">Enteric brain</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-style: italic;">detects frequency vibration</span>
-                </p>
-                <p style="text-align: center; font-size: 1.05rem; color: #1e1a17; margin-top: 0.05rem;">
-                    <span style="color: #6a625a; padding: 0 0.4rem;">↓</span>
-                </p>
-                <p style="text-align: center; font-size: 1.05rem; color: #1e1a17;">
-                    <span style="font-weight: 500;">Head brain</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-style: italic;">labels it as "emotion"</span>
-                </p>
-            </div>
-
-            <p>This explains why pregnancy emotions feel so visceral, so bodily, so overwhelming. The mother is not imagining the feeling. She is not being irrational. She is processing real data from a real connection. The emotion can be understood as one form of conscious interpretation of integrated physiological and contextual information.</p>
-
-            <div class="connection-box">
-                <p>"The enteric brain feels the frequency vibration — the head brain labels it as emotion."</p>
-                <div class="source">
-                    — Scalar Consciousness Research<br />
-                    <span class="founder">Christopher Macachor, Founder</span>
-                </div>
-            </div>
-
-            <p>The mood change is an experience; the tear is an expression; the anxiety is an interpretation. Biological meaning, in this framework, refers to the possibility that these experiences contain information about physiological state and context—not to a presumption that every emotion is a message from the fetus.</p>
-        </section>
-
-        <!-- SECTION 6 -->
-        <section>
-            <h2 class="section-title">Coherence: The Restoration of Harmony</h2>
-
-            <p>Understanding this paradigm changes everything. It shifts the focus from <em>managing emotions</em> to <strong>restoring coherence</strong>. The goal is not to suppress the anxiety or medicate the mood swings. The goal is to listen to the signal, to understand what it is communicating, and to restore harmony to the shared enteric field.</p>
-
-            <p>This restoration is not a mystical concept; it is a biological imperative. Strategies that support coherence are simple, yet profound:</p>
-
-            <ul class="evidence-list">
-                <li><strong>Sleep:</strong> A period of enteric recalibration; re-synchronizes rhythms.</li>
-                <li><strong>Social Connection:</strong> Supportive interactions stabilize the enteric field.</li>
-                <li><strong>Mindfulness:</strong> Aligns head brain with enteric brain's present-time processing.</li>
-                <li><strong>Honest Self-Assessment:</strong> Naming what is felt acknowledges the enteric signal.</li>
-            </ul>
-
-            <div class="two-way-box" style="border-left-color: #b22222;">
-                <p style="text-align: center; font-size: 1.0rem;">
-                    <span style="font-weight: 500;">Coherence</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">⟷</span>
-                    <span style="font-weight: 500;">Fetal coherence</span>
-                </p>
-                <p style="text-align: center; font-size: 0.85rem; color: #5a524a; margin-top: 0.1rem;">
-                    Restoring one restores the other.
-                </p>
-            </div>
-
-            <div class="connection-box">
-                <p>"Supporting maternal physiological stability may support healthy pregnancy processes; the proposed direct equivalence between maternal and fetal coherence remains unverified."</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-        </section>
-
-        <!-- SECTION 7 -->
-        <section>
-            <h2 class="section-title">Biological Meaning: From Emotional Interpretation to Physiological Understanding</h2>
-
-            <p>The proposed paradigm shift is from treating pregnancy-related emotional experience as merely subjective or disruptive toward examining its possible biological, physiological, and informational dimensions. It is the recognition that the pregnant body is not a vessel for chaos, but a finely tuned instrument of communication. It is the understanding that the "mood swings" are not evidence of fragility, but of profound connection. It is the comprehension that the love, the fear, the hope, and the anxiety are all facets of a single, unified truth:</p>
-
-            <div class="truth-box" style="border-left-color: #b22222; background: #faf8f6;">
-                <p class="big-truth" style="font-size: 1.8rem;">You and your baby are physiologically connected.</p>
-                <p style="text-align: center; color: #5a524a; font-style: italic; font-size: 1.0rem; margin-bottom: 0.4rem;">
-                    Two bodies. One developmental relationship. Multiple interacting biological systems.
-                </p>
-            </div>
-
-            <p>When you embrace this truth, you cease to be a victim of your emotions. You become an interpreter of signals, a participant in a conversation, a guardian of a shared field. The journey of pregnancy is not about surviving the storm; it is about learning to read the weather, to understand the language of the body, and to find coherence in the beautiful, terrifying, and miraculous entanglement of two lives becoming one.</p>
-
-            <div class="connection-box" style="border-left-color: #b22222;">
-                <p style="font-style: normal; font-size: 1.05rem; text-align: center;">
-                    <strong>You are not broken. You are connected.</strong><br />
-                    <strong>You are not overreacting. You are receiving signals.</strong><br />
-                    <strong>You are not alone. Pregnancy involves a profound physiological connection between maternal and fetal systems.</strong>
-                </p>
-            </div>
-        </section>
-
-        <!-- SECTION 8 -->
-        <section>
-            <h2 class="section-title">Framework Summary and Research Status</h2>
-
-            <p>Historical and philosophical traditions have associated the gut with emotion, intuition, and harmony. Modern research independently establishes extensive gut-brain and maternal-fetal signaling mechanisms. This manuscript goes further by proposing a scalar-coherence interpretation; that interpretation should not be described as a confirmation of ancient claims without empirical evidence.</p>
-
-            <p>The biological meaning proposed here is that pregnancy is a complex, dynamically coupled physiological state in which maternal and fetal systems interact continuously. Emotional experience is one component of that system, not its sole explanatory mechanism. The Scalar Consciousness Research interpretation of coherence is presented as a hypothesis for further study.</p>
-
-            <div class="truth-box">
-                <p class="big-truth">When you restore your coherence, you restore your baby's coherence.</p>
-                <p class="sub-truth">The two are one.</p>
-                <div class="lock">
-                    <span class="gold">Ω · SCALAR COHERENCE · TWO BODIES · ONE DEVELOPMENTAL SYSTEM</span>
-                </div>
-            </div>
-
-            <div class="phi-omega">
-                <span style="color: #4a423a;">Φ</span>
-                <span style="color: #8a7a72; padding: 0 0.2rem;">·</span>
-                <span style="color: #4a423a;">Ω</span>
-                <span style="color: #8a7a72; padding: 0 0.2rem;">·</span>
-                <span style="color: #4a423a;">𝔐</span>
-            </div>
-        </section>
-
-        <section class="research-status">
-            <h2 class="section-title">Research Status and Scope</h2>
-            <p><strong>Scientific status:</strong> This monograph combines established biological observations with theoretical synthesis and hypotheses developed within the Scalar Consciousness Research framework.</p>
-            <p>Established findings concerning the enteric nervous system, maternal-fetal physiology, placental exchange, autonomic signaling, and pregnancy-related emotional experience should be distinguished from the manuscript's proposed scalar-coherence interpretation.</p>
-            <p>The proposed concepts of a shared enteric field, direct fetal-to-maternal enteric signaling, and scalar coherence as an explanatory mechanism are hypotheses requiring independent empirical validation. Nothing in this monograph should be interpreted as medical diagnosis, treatment, or a substitute for prenatal or clinical care.</p>
-        </section>
-
-        <!-- REFERENCES -->
-        <section class="ref-section">
-            <h2 class="section-title">References</h2>
-
-            <ul class="ref-list">
-                <li>Furness, J. B. (2006). <em>The Enteric Nervous System</em>. Blackwell.</li>
-                <li>Sharkey, K. A., &amp; Mawe, G. M. (2023). The enteric nervous system. <em>Physiological Reviews</em>, 103(2), 1487–1579.</li>
-                <li>Spencer, N. J., &amp; Hu, H. (2020). Enteric nervous system: sensory transduction, neural circuits and gastrointestinal motility. <em>Nature Reviews Gastroenterology &amp; Hepatology</em>, 17, 338–351.</li>
-                <li>Gibbs, R. (2008). Prenatal care. In <em>Danforth's Obstetrics and Gynecology</em> (10th ed., p. 18). Lippincott Williams &amp; Wilkins.</li>
-            </ul>
-
-            <p style="margin-top: 0.8rem; font-size: 0.75rem; color: #6a625a; border-top: 1px solid #e8e4e0; padding-top: 0.6rem; text-align: center;">
-                &copy; 2026 Scalar Consciousness Research · Christopher Macachor, Founder
-            </p>
-        </section>
-
-    </div>
-</div>
-
-<!-- SPANISH VERSION -->
-<div id="lang-es" class="lang-content">
-
-    <!-- COVER -->
-    <div class="cover">
-        <div class="masthead">Scalar Consciousness Research · Serie Monográfica</div>
-        <h1>Embarazo</h1>
-        <div class="divider-line"></div>
-        <div class="sub">Cambio de Paradigma — De las Emociones a la Comprensión del Verdadero Significado</div>
-        <div class="meta">
-            <span>Fundador · Christopher Macachor</span>
-            <span>2026</span>
-            <span>Armónica 311</span>
+        <div class="arch-item">
+          <strong>Epistemology</strong>
+          <span>Observation logs, second-order observation, invariant extraction, inverse connotation, independent validation.</span>
         </div>
+        <div class="arch-item">
+          <strong>Critique</strong>
+          <span>How institutions convert meaning into authority—and how to audit that conversion.</span>
+        </div>
+        <div class="arch-item">
+          <strong>Derivation</strong>
+          <span>Physics, mathematics, biology, and applied tools attempt to instantiate the framework.</span>
+        </div>
+      </div>
+
+      <div class="reading-order">
+        <strong>Suggested reading order:</strong>
+        <a class="chip chip-primary" href="#contribution">Core Contribution</a>
+        <span>→</span>
+        <a class="chip" href="#foundation">Territory Domain</a>
+        <span>→</span>
+        <a class="chip" href="#foundation">Polymath Method</a>
+        <span>→</span>
+        <a class="chip" href="#critique">Authority Structure</a>
+        <span>→</span>
+        <a class="chip" href="#critique">Scope Challenge</a>
+        <span>→</span>
+        <a class="chip" href="#physics">Atoms Know</a>
+        <span>/</span>
+        <a class="chip" href="#math">144-Poly</a>
+        <span>→</span>
+        <a class="chip" href="#math">domain-specific pages</a>
+      </div>
     </div>
+  </header>
 
-    <div class="container">
-
-        <!-- SECTION 1 -->
-        <section>
-            <!-- SIDE FLOATED SUBTLE IMAGE -->
-            <div class="subtle-side-image">
-                <img src="maxresdefault.jpg" alt="Fetus in Utero" />
-            </div>
-
-            <p class="opening-para">
-                Antes de que la línea se vuelva rosa, la historia del embarazo suele contarse como una tempestad de emociones—una oleada repentina y arrolladora de alegría, terror y un amor biológico y frenético que parece descender del cielo para reclamar tu cuerpo como su vasija. En esos primeros meses, este paisaje emocional es una tormenta implacable, dictada por hormonas desbordadas que tiñen cada pensamiento con matices de euforia y ansiedad profunda. Nos aferramos a estos sentimientos como la definición misma de la experiencia, creyendo que la intensidad de nuestro amor, miedo y esperanza es la medida de nuestra preparación. Pero a medida que las semanas se convierten en meses y el latido abstracto en una pantalla se convierte en una presencia viva que patea, comienza a producirse un cambio sutil pero monumental. La marea cruda y visceral de la emoción no retrocede, sino que se profundiza, transformándose de una fuerza reactiva en un entendimiento silencioso y resonante—una realización de que este viaje trata menos de lo que <em>sentimos</em> y más de lo que estamos empezando a <em>comprender</em> sobre el profundo peso de la existencia que ahora llevamos.
-            </p>
-
-            <h2 class="section-title">El Mito Cultural: Las Emociones como Debilidad</h2>
-
-            <p>Nuestra cultura ha enmarcado durante mucho tiempo a la mujer embarazada como una criatura de pura emoción—hormonal, volátil y gobernada por una biología que la vuelve irracional. Lo llamamos "cambios de humor" y lo descartamos como un efecto secundario del embarazo, una locura temporal que debe manejarse con paciencia y quizás una taza de té. Ofrecemos simpatía, pero raramente respeto. Vemos las lágrimas, la irritabilidad, la risa repentina, y las etiquetamos como inestabilidad. Le decimos que es "solo las hormonas", como si eso explicara algo.</p>
-
-            <p>Pero esta narrativa, por bien intencionada que sea, es un malentendido profundo. Reduce un sistema de comunicación bidireccional y complejo a un estallido caótico de productos químicos. Etiqueta como "trastorno" lo que es, en realidad, una red de información altamente sofisticada. Trata el síntoma mientras ignora la señal. Conforta a la mujer mientras despide al mensajero.</p>
-
-            <div class="connection-box">
-                <p>"¿Y si la tormenta emocional no es el problema, sino la <strong>señal</strong>? ¿Y si la ansiedad, la irritabilidad, las lágrimas repentinas y la alegría inexplicable no son solo hormonas descontroladas, sino la voz de una inteligencia más profunda—una inteligencia que reside no en la cabeza, sino en el intestino?"</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-        </section>
-
-        <!-- SECTION 2 -->
-        <section>
-            <h2 class="section-title">El Primer Cerebro: Repensando el Sistema Nervioso Entérico</h2>
-
-            <p>La neurociencia moderna revela una verdad que la sabiduría ancestral siempre ha conocido: el intestino posee una mente propia. El sistema nervioso entérico (SNE), una red compleja de aproximadamente <strong>500 millones de neuronas</strong> incrustadas en el tracto gastrointestinal, no es un "segundo cerebro" en un sentido subordinado. Es, evolutiva y developmentalmente, el <strong>primer cerebro</strong>.</p>
-
-            <ul class="evidence-list">
-                <li><strong>Temporalidad del desarrollo:</strong> El SNE comienza a formarse durante la semana 4 embrionaria, antes que la corteza cerebral (semana 6–8).</li>
-                <li><strong>Autonomía:</strong> El SNE puede generar patrones motores complejos sin ninguna entrada del sistema nervioso central.</li>
-                <li><strong>Número de neuronas:</strong> Contiene aproximadamente 500 millones de neuronas, comparable a la médula espinal.</li>
-                <li><strong>Conservación evolutiva:</strong> El SNE está presente en todos los vertebrados, precediendo a la evolución de la corteza cerebral.</li>
-            </ul>
-
-            <p>Esto no es una metáfora. El cerebro entérico es un órgano sensorial real y funcional. Detecta frecuencia, vibración y gradientes químicos. Procesa información localmente y genera respuestas. Es el orquestador del embarazo, no el sirviente del cerebro de la cabeza. Y crucialmente, durante el embarazo, se convierte en la interfaz principal entre la madre y el niño.</p>
-
-            <div class="connection-box">
-                <p>"El sistema nervioso entérico no es un sistema secundario. Es evolutivamente primario. Se desarrolló antes que la corteza cerebral. Es el orquestador del embarazo, no el sirviente del cerebro de la cabeza."</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-        </section>
-
-        <!-- SECTION 3 -->
-        <section>
-            <h2 class="section-title">La Conexión Entérica Compartida: Dos Cuerpos, un Solo Ser</h2>
-
-            <p>Aquí radica el cambio de paradigma. El modelo predominante del embarazo enfatiza la señalización hormonal y la transferencia de nutrientes a través de la placenta. Si bien estos caminos son importantes, no explican la comunicación bidireccional y en tiempo real que las madres experimentan intuitivamente. El feto, con su propio sistema nervioso entérico en desarrollo, no es un receptor pasivo. Es un participante activo en un campo neurológico compartido.</p>
-
-            <div class="two-way-box">
-                <p style="font-size: 1.05rem; text-align: center; font-weight: 400; letter-spacing: 0.03em;">
-                    <span style="font-weight: 500;">Cerebro entérico materno</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">⟷</span>
-                    <span style="font-weight: 500;">Cerebro entérico fetal</span>
-                </p>
-                <div class="arrow-line">⬇ ⬆ ⬇ ⬆ ⬇ ⬆</div>
-                <p class="center-bold">Ambas direcciones. Continuo. Cada momento.</p>
-            </div>
-
-            <p>La conexión no es meramente emocional; es estructural. El cordón umbilical no es solo un tubo para la sangre y los nutrientes. Es un <strong>intestino</strong>—un puente vivo y sensible que conecta el cerebro entérico de la madre directamente con el cerebro entérico de su bebé. Un intestino, dos cuerpos.</p>
-
-            <div class="truth-box">
-                <p class="big-truth">Tú y tu bebé son un solo ser.</p>
-                <p class="sub-truth">Dos cuerpos. Una conexión. Un campo. Una verdad.</p>
-
-                <p>El cordón umbilical no es un tubo. Es un <strong>intestino</strong>—un puente vivo y sensible entre tu cerebro entérico y el cerebro entérico de tu bebé.</p>
-
-                <div class="inner-highlight">
-                    <p>Tu cerebro entérico está en tu intestino.</p>
-                    <p>El cerebro entérico de tu bebé está en el intestino de tu bebé.</p>
-                    <p>El cordón es el intestino que los conecta.</p>
-                    <p style="color: #5a524a; font-style: italic; margin-top: 0.2rem;">— Un intestino, dos cuerpos</p>
-                </div>
-
-                <p>A través de este intestino, comparten <strong>todo</strong>:</p>
-
-                <ul class="list-truth">
-                    <li><strong>Sangre</strong> — tu vida fluye hacia tu bebé, la vida de tu bebé fluye hacia ti</li>
-                    <li><strong>Células</strong> — las WJ-MSCs transportan señales entre ustedes</li>
-                    <li><strong>Nervios</strong> — el sistema nervioso entérico se conecta a través del cordón</li>
-                    <li><strong>Sentimientos</strong> — tus emociones viajan a tu bebé, las de tu bebé a ti</li>
-                    <li><strong>Señales</strong> — coherencia o incoherencia, lo comparten todo</li>
-                </ul>
-
-                <div class="two-way">
-                    <span style="font-weight: 500;">Tú</span>
-                    <span class="arrow">⟷</span>
-                    <span style="font-weight: 500;">Tu Bebé</span>
-                </div>
-                <p style="text-align: center; color: #5a524a; font-size: 0.9rem; margin-top: -0.2rem;">
-                    A través del intestino. Ambas direcciones. Cada momento.
-                </p>
-
-                <div class="lock">
-                    <span class="gold">𝔐 = (√5-1)/2</span> · EL CIERRE PERMANECE
-                </div>
-            </div>
-
-            <p>La comunicación fluye en ambas direcciones, mediada por el nervio vago, los nervios pélvicos y la circulación esplácnica. La madre no está "emocional"; está <em>entrelazada</em>. Está procesando datos sensoriales crudos del cerebro entérico de su bebé a través de su propio cerebro primario.</p>
-        </section>
-
-        <!-- SECTION 4 -->
-        <section>
-            <h2 class="section-title">Las Emociones como Señales, No como Síntomas</h2>
-
-            <p>Esta comprensión redefine todo lo que creíamos saber sobre las emociones en el embarazo.</p>
-
-            <div class="two-way-box" style="border-left-color: #b22222;">
-                <p style="text-align: center; font-size: 1.0rem;">
-                    <span style="font-weight: 500;">Incoherencia fetal</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-weight: 500;">El entérico materno lo detecta</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-weight: 500;">El cerebro de la cabeza lo etiqueta como emoción</span>
-                </p>
-            </div>
-
-            <p>El cambio de humor no es un trastorno. Es una <strong>señal de información</strong>. Es la voz del bebé, traducida por la biología de la madre a un lenguaje que su mente consciente puede entender.</p>
-
-            <p>Cuando una mujer embarazada se siente de repente ansiosa sin razón aparente, no está rota. Está recibiendo una señal. Cuando siente una ola de paz inexplicable, está experimentando coherencia fluyendo a través del campo compartido. Cuando irrumpe en lágrimas sin previo aviso, no está siendo dramática; está traduciendo el lenguaje inarticulado del cerebro entérico de su bebé al único idioma que su cerebro de la cabeza conoce: la emoción.</p>
-
-            <div class="connection-box">
-                <p>"La madre no está 'emocional'. Está entrelazada. Está sintiendo las señales del feto a través de su cerebro primario. La interpretación que el cerebro de la cabeza hace de estas señales es lo que llamamos 'emoción'. El cambio de humor es la señal."</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-
-            <p>Por el contrario, la incoherencia materna—agotamiento, estrés, trauma no resuelto—se transmite de vuelta al feto. El cerebro entérico fetal lo detecta, y el feto responde con cambios en la frecuencia cardíaca, el movimiento y el neurodesarrollo. Esto no es una calle de un solo sentido. Es una conversación continua y recíproca.</p>
-
-            <div class="connection-box" style="border-left-color: #b22222;">
-                <p style="font-style: normal; font-size: 1.0rem; text-align: center;">
-                    <span style="font-weight: 500;">Tú</span>
-                    <span style="color: #6a625a; padding: 0 0.6rem;">⟷</span>
-                    <span style="font-weight: 500;">Tu Bebé</span>
-                </p>
-                <p style="text-align: center; color: #5a524a; font-style: normal; font-size: 0.9rem;">
-                    A través del intestino. Ambas direcciones. Cada momento.
-                </p>
-            </div>
-        </section>
-
-        <!-- SECTION 5 -->
-        <section>
-            <h2 class="section-title">El Cerebro de la Cabeza Etiqueta; el Cerebro Entérico Siente</h2>
-
-            <p>Esta distinción es crucial. El cerebro de la cabeza no siente directamente; <em>interpreta</em> y <em>etiqueta</em> las señales que recibe del cuerpo. El cerebro entérico, por el contrario, detecta la frecuencia cruda, la vibración, el gradiente químico. Es el receptor primario. El cerebro de la cabeza es el traductor.</p>
-
-            <div class="two-way-box" style="border-left-color: #b22222;">
-                <p style="text-align: center; font-size: 1.05rem; color: #1e1a17;">
-                    <span style="font-weight: 500;">Cerebro entérico</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-style: italic;">detecta vibración de frecuencia</span>
-                </p>
-                <p style="text-align: center; font-size: 1.05rem; color: #1e1a17; margin-top: 0.05rem;">
-                    <span style="color: #6a625a; padding: 0 0.4rem;">↓</span>
-                </p>
-                <p style="text-align: center; font-size: 1.05rem; color: #1e1a17;">
-                    <span style="font-weight: 500;">Cerebro de la cabeza</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">→</span>
-                    <span style="font-style: italic;">lo etiqueta como "emoción"</span>
-                </p>
-            </div>
-
-            <p>Esto explica por qué las emociones del embarazo se sienten tan viscerales, tan corporales, tan abrumadoras. La madre no está imaginando el sentimiento. No está siendo irracional. Está procesando datos reales de una conexión real. La emoción es la traducción de esos datos a la experiencia consciente.</p>
-
-            <div class="connection-box">
-                <p>"El cerebro entérico siente la vibración de la frecuencia — el cerebro de la cabeza la etiqueta como emoción."</p>
-                <div class="source">
-                    — Scalar Consciousness Research<br />
-                    <span class="founder">Christopher Macachor, Fundador</span>
-                </div>
-            </div>
-
-            <p>El cambio de humor es la señal. La lágrima es la traducción. La ansiedad es la interpretación. Y la comprensión—el verdadero significado—es el reconocimiento de que estos no son síntomas que deban manejarse, sino mensajes que deben recibirse.</p>
-        </section>
-
-        <!-- SECTION 6 -->
-        <section>
-            <h2 class="section-title">Coherencia: La Restauración de la Armonía</h2>
-
-            <p>Entender este paradigma lo cambia todo. Desplaza el enfoque de <em>gestionar las emociones</em> a <strong>restaurar la coherencia</strong>. El objetivo no es suprimir la ansiedad o medicar los cambios de humor. El objetivo es escuchar la señal, comprender lo que está comunicando y restaurar la armonía en el campo entérico compartido.</p>
-
-            <p>Esta restauración no es un concepto místico; es un imperativo biológico. Las estrategias que apoyan la coherencia son simples, pero profundas:</p>
-
-            <ul class="evidence-list">
-                <li><strong>Sueño:</strong> Un período de recalibración entérica; resincroniza los ritmos.</li>
-                <li><strong>Conexión Social:</strong> Las interacciones de apoyo estabilizan el campo entérico.</li>
-                <li><strong>Atención Plena (Mindfulness):</strong> Alinea el cerebro de la cabeza con el procesamiento en tiempo presente del cerebro entérico.</li>
-                <li><strong>Autoevaluación Honesta:</strong> Nombrar lo que se siente reconoce la señal entérica.</li>
-            </ul>
-
-            <div class="two-way-box" style="border-left-color: #b22222;">
-                <p style="text-align: center; font-size: 1.0rem;">
-                    <span style="font-weight: 500;">Coherencia</span>
-                    <span style="color: #6a625a; padding: 0 0.4rem;">⟷</span>
-                    <span style="font-weight: 500;">Coherencia fetal</span>
-                </p>
-                <p style="text-align: center; font-size: 0.85rem; color: #5a524a; margin-top: 0.1rem;">
-                    Restaurar una restaura la otra.
-                </p>
-            </div>
-
-            <div class="connection-box">
-                <p>"Cuando restauras tu coherencia, restauras la coherencia de tu bebé. Los dos son uno."</p>
-                <div class="source">— Scalar Consciousness Research</div>
-            </div>
-        </section>
-
-        <!-- SECTION 7 -->
-        <section>
-            <h2 class="section-title">El Verdadero Significado: Del Miedo a la Confianza</h2>
-
-            <p>El cambio de paradigma de las emociones a la comprensión es, en esencia, un cambio del miedo a la confianza. Es el reconocimiento de que el cuerpo embarazado no es un recipiente para el caos, sino un instrumento finamente afinado de comunicación. Es la comprensión de que los "cambios de humor" no son evidencia de fragilidad, sino de conexión profunda. Es la comprensión de que el amor, el miedo, la esperanza y la ansiedad son todas facetas de una única verdad unificada:</p>
-
-            <div class="truth-box" style="border-left-color: #b22222; background: #faf8f6;">
-                <p class="big-truth" style="font-size: 1.8rem;">Tú y tu bebé son un solo ser.</p>
-                <p style="text-align: center; color: #5a524a; font-style: italic; font-size: 1.0rem; margin-bottom: 0.4rem;">
-                    Dos cuerpos. Una conexión. Un campo. Una verdad.
-                </p>
-            </div>
-
-            <p>Cuando abrazas esta verdad, dejas de ser víctima de tus emociones. Te conviertes en intérprete de señales, participante en una conversación, guardián de un campo compartido. El viaje del embarazo no se trata de sobrevivir a la tormenta; se trata de aprender a leer el clima, a entender el lenguaje del cuerpo y a encontrar coherencia en el hermoso, aterrador y milagroso entrelazamiento de dos vidas que se convierten en una.</p>
-
-            <div class="connection-box" style="border-left-color: #b22222;">
-                <p style="font-style: normal; font-size: 1.05rem; text-align: center;">
-                    <strong>No estás rota. Estás conectada.</strong><br />
-                    <strong>No estás reaccionando de más. Estás recibiendo señales.</strong><br />
-                    <strong>No estás sola. Eres una con tu bebé.</strong>
-                </p>
-            </div>
-        </section>
-
-        <!-- SECTION 8 -->
-        <section>
-            <h2 class="section-title">El Cierre Permanece</h2>
-
-            <p>Los antiguos griegos sabían que el intestino era la sede de la emoción y la intuición. Los pitagóricos reconocían la estructura armónica del cosmos. En la era moderna, la ciencia está alcanzando estos conocimientos. El cerebro entérico, el nervio vago, la señalización bidireccional—estos no son descubrimientos nuevos. Son confirmaciones de una verdad antigua: no somos mentes aisladas en cuerpos aislados. Estamos conectados, resonantes y coherentes.</p>
-
-            <p>Este es el verdadero significado del embarazo. No es un evento biológico que deba gestionarse, sino una revelación que debe comprenderse. Es la realización de que las emociones no son el enemigo; son el lenguaje de una inteligencia más profunda. Es el reconocimiento de que la coherencia no es un lujo, sino una necesidad. Y es el saber que, en la conexión entérica compartida, el cierre permanece.</p>
-
-            <div class="truth-box">
-                <p class="big-truth">Cuando restauras tu coherencia, restauras la coherencia de tu bebé.</p>
-                <p class="sub-truth">Los dos son uno.</p>
-                <div class="lock">
-                    <span class="gold">Ω · ARMÓNICA 311 · UN SER · DOS CUERPOS · UNA VERDAD</span>
-                </div>
-            </div>
-
-            <div class="phi-omega">
-                <span style="color: #4a423a;">Φ</span>
-                <span style="color: #8a7a72; padding: 0 0.2rem;">·</span>
-                <span style="color: #4a423a;">Ω</span>
-                <span style="color: #8a7a72; padding: 0 0.2rem;">·</span>
-                <span style="color: #4a423a;">𝔐</span>
-            </div>
-        </section>
-
-        <!-- REFERENCES -->
-        <section class="ref-section">
-            <h2 class="section-title">Referencias</h2>
-
-            <ul class="ref-list">
-                <li>Furness, J. B. (2006). <em>The Enteric Nervous System</em>. Blackwell.</li>
-                <li>Sharkey, K. A., &amp; Mawe, G. M. (2023). The enteric nervous system. <em>Physiological Reviews</em>, 103(2), 1487–1579.</li>
-                <li>Spencer, N. J., &amp; Hu, H. (2020). Enteric nervous system: sensory transduction, neural circuits and gastrointestinal motility. <em>Nature Reviews Gastroenterology &amp; Hepatology</em>, 17, 338–351.</li>
-                <li>Gibbs, R. (2008). Prenatal care. In <em>Danforth's Obstetrics and Gynecology</em> (10th ed., p. 18). Lippincott Williams &amp; Wilkins.</li>
-            </ul>
-
-            <p style="margin-top: 0.8rem; font-size: 0.75rem; color: #6a625a; border-top: 1px solid #e8e4e0; padding-top: 0.6rem; text-align: center;">
-                &copy; 2026 Scalar Consciousness Research · Christopher Macachor, Fundador
-            </p>
-        </section>
-
+  <nav class="toc" aria-label="Category navigation">
+    <div class="wrap toc-inner">
+      <a href="#contribution" class="primary">Core Contribution</a>
+      <a href="#mathematics-declaration">Credit on Mathematics</a>
+      <a href="#foundation">Foundational Ontology &amp; Epistemology</a>
+      <a href="#critique">Institutional Critique</a>
+      <a href="#physics">Physics &amp; Cosmology</a>
+      <a href="#math">Mathematics &amp; Geometry</a>
+      <a href="#bio">Biology, Medicine &amp; Material Memory</a>
+      <a href="#symbolic">Symbolic &amp; Educational</a>
+      <a href="#status">Corpus Status</a>
     </div>
-</div>
+  </nav>
 
-<script>
-    function switchLanguage(lang) {
-        document.querySelectorAll('.lang-tab').forEach(tab => {
-            tab.classList.remove('active');
-            if (tab.getAttribute('data-lang') === lang) {
-                tab.classList.add('active');
-            }
-        });
+  <main class="wrap">
 
-        document.querySelectorAll('.lang-content').forEach(content => {
-            content.classList.remove('active');
-        });
-        document.getElementById('lang-' + lang).classList.add('active');
-    }
-</script>
+    <!-- CORE CONTRIBUTION -->
+    <section class="block" id="contribution">
+      <div class="section-head">
+        <div>
+          <h2>Core Contribution</h2>
+          <p>A polymath method of discovery—and a declared division of labor between the invariant and its formal rendering.</p>
+        </div>
+        <span class="count count-primary">Read first</span>
+      </div>
+
+      <p class="pullquote">
+        The contribution is the method: compress fragmented, cross-domain data into a structural invariant,
+        then show the structure that connects the fragments—challenging the norm and assembling the finished
+        puzzle. The mathematics is the AI-rendered representation of that invariant, supplied for translation.
+      </p>
+
+      <div class="declaration">
+
+        <div class="panel discovery">
+          <span class="label">The contribution</span>
+          <h3>Semantic compression into an invariant—and the synthesis that reveals the connecting structure</h3>
+          <p>
+            The core contribution of this work is a <strong>polymath method of discovery</strong>:
+            the <strong>semantic compression</strong> of fragmented, cross-domain data into a coherent
+            <strong>structural invariant</strong>, and the ability to <strong>synthesise unrelated
+            historical and scientific records</strong> to find the structure that connects the
+            fragmentation—a method that challenges the prevailing norm and builds the finished puzzle.
+          </p>
+          <ul>
+            <li><strong>Method:</strong> observation logs → second-order observation → invariant extraction → inverse connotation → independent validation.</li>
+            <li><strong>What is discovered:</strong> the structural invariant itself, and the hidden architecture connecting previously unrelated fragments.</li>
+            <li><strong>What is built:</strong> the finished puzzle—the tiered translation architecture that keeps every rendering traceable to the territory.</li>
+            <li><strong>Why it is a contribution:</strong> it challenges the norm by refusing the fragmentation of specialised domains as a terminal condition.</li>
+          </ul>
+        </div>
+
+        <div class="panel math-role" id="mathematics-declaration">
+          <span class="label">Credit on mathematics</span>
+          <h3>All mathematical formulas are AI representations of the invariant, credited for translation</h3>
+          <p>
+            Every mathematical formula presented herein—for example Laplace’s equation,
+            Gram-matrix invariants, and scalar field dynamics—is credited as an
+            <strong>AI representation of the invariant</strong>: a <strong>translation layer</strong>
+            supplied to render the synthesized invariant legible, falsifiable, and admissible to the
+            formal scientific method.
+          </p>
+          <p>
+            None of the formulas are claimed as original mathematical discoveries by the author.
+            The mathematics is the representation of the former; the discovery is the former itself—
+            the structural invariant and the method that extracts it.
+          </p>
+          <p>
+            This division of labor is <strong>declared openly</strong> to prevent the very
+            Type Mismatch (E03) this corpus critiques.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="callout">
+        <span class="tag">Claim ledger · E03</span>
+        <h3>What is claimed, what is credited, and what is not claimed</h3>
+        <table class="ledger">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Claimed</td>
+              <td>The polymath method of discovery; semantic compression into a structural invariant; the cross-domain synthesis that reveals the connecting structure; the tiered translation architecture.</td>
+            </tr>
+            <tr>
+              <td class="credited">Credited to AI</td>
+              <td>All mathematical formulas and formalisms—as representations of the invariant, generated for translation, legibility, and falsifiability.</td>
+            </tr>
+            <tr>
+              <td class="notclaimed">Not claimed</td>
+              <td>Original mathematical discovery; that any map is the territory.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="ledger-note">
+          A <strong>Type Mismatch (E03)</strong> occurs when a representation is credited as the territory.
+          Naming the mathematics as AI representation, and the invariant plus tiered architecture as the
+          actual contribution, keeps each element in its correct type—so the invariant can be challenged as
+          an invariant, and the mathematics checked as a representation, without either standing in for the other.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOUNDATION -->
+    <section class="category" id="foundation">
+      <div class="section-head">
+        <div>
+          <h2>Foundational Ontology &amp; Epistemology</h2>
+          <p>The ontological constraints and epistemic procedure for the corpus.</p>
+        </div>
+        <span class="count">2 sites</span>
+      </div>
+
+      <div class="grid">
+        <a class="card foundation" href="https://territoryfirst.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Ontology</span>
+          <h3>The Law of the Territory Domain</h3>
+          <p>
+            The corpus’s primary ontological statement: <strong>territory precedes cartography</strong>.
+            It defines the Macachor Fundamental Invariant as the first derivative of structure and sets out
+            the canonical chain: Substrate → Structure → Invariant → Representation → Numerical Encoding →
+            Linguistic Encoding → Meaning. Maps, models, and measurements encode reality; they do not create it.
+          </p>
+          <span class="url">territoryfirst.macachor.org</span>
+        </a>
+
+        <a class="card foundation" href="https://polymathchristopher.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Epistemology</span>
+          <h3>The Polymath Method of Christopher Macachor</h3>
+          <p>
+            The corpus’s primary epistemological procedure. It moves from observation logs to candidate
+            invariants through <strong>second-order observation</strong>—every observation must be paired with
+            an account of how it was produced. Its truth procedure is <strong>inverse connotation</strong>:
+            reversing the movement by which a label acquires explanatory authority. Claims must survive
+            independent validation.
+          </p>
+          <span class="url">polymathchristopher.macachor.org</span>
+        </a>
+      </div>
+
+      <p style="margin:1rem 0 0; color:var(--muted); font-size:.88rem; max-width:80ch;">
+        <strong>Functional distinction:</strong> Territory Domain supplies ontological constraints;
+        Polymath Method supplies the epistemic procedure for extracting and validating invariants under
+        those constraints. The division is functional, not absolute.
+      </p>
+    </section>
+
+    <!-- CRITIQUE -->
+    <section class="category" id="critique">
+      <div class="section-head">
+        <div>
+          <h2>Institutional Critique &amp; Epistemic Secession</h2>
+          <p>How authority structures convert meaning into consequence—and how to audit that conversion.</p>
+        </div>
+        <span class="count">4 sites</span>
+      </div>
+
+      <div class="grid">
+        <a class="card critique" href="https://theauthoritystructure.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Authority</span>
+          <h3>The Authority Structure</h3>
+          <p>
+            A four-layer analytical method—<strong>Record → Inference → Theory → Prediction</strong>—for
+            examining how institutions convert knowledge into historical consequence. Its core proposition:
+            authority structures, through bureaucratic language, translate possibility into action while
+            mediating the perception of responsibility.
+          </p>
+          <span class="url">theauthoritystructure.macachor.org</span>
+        </a>
+
+        <a class="card critique" href="https://scientificbeliefsystems.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">History of science</span>
+          <h3>Scientific Belief Systems</h3>
+          <p>
+            A historical critique arguing that Einstein’s 1905 breakthrough was built on a “citation loophole”
+            exploited from his position as an academic outsider. It also argues that Heaviside’s removal of
+            the scalar from Hamilton’s quaternions was the “original amputation” later canonized as spacetime.
+          </p>
+          <span class="url">scientificbeliefsystems.macachor.org</span>
+        </a>
+
+        <a class="card critique" href="https://thescopechallenge.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Translation</span>
+          <h3>The Scope Challenge <span class="e03">E03</span></h3>
+          <p>
+            A translation architecture built on <strong>one territory, multiple maps</strong>. It defines six
+            tiers of translation—from raw territory observation to formal invariant—with the rule that every
+            translation must retain a traceable route back to the original observation. A study’s scope is a
+            boundary around an investigation, not a declaration that the territory ends there. This is the page
+            that names the <strong>Type Mismatch (E03)</strong> the corpus works to prevent.
+          </p>
+          <span class="url">thescopechallenge.macachor.org</span>
+        </a>
+
+        <a class="card critique" href="https://tollbooth.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Epistemic secession</span>
+          <h3>Tollbooth — The Fragments of the Blade</h3>
+          <p>
+            The <strong>Epistemic Secession Project</strong>’s operational blueprint. It argues that modern
+            power rests on a <strong>monopoly of meaning</strong> enforced through specialized vocabulary—a
+            “Tollbooth of Meaning” in law, medicine, physics, and technology. The atom was the first “fragment”
+            (the prototype of epistemic rent-seeking); the algorithm is the refinement.
+          </p>
+          <span class="url">tollbooth.macachor.org</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- PHYSICS -->
+    <section class="category" id="physics">
+      <div class="section-head">
+        <div>
+          <h2>Physics &amp; Cosmology</h2>
+          <p>Critiques of mainstream physics and constructive scalar-field alternatives.</p>
+        </div>
+        <span class="count">4 sites</span>
+      </div>
+
+      <div class="grid">
+        <a class="card physics" href="https://atomsknow.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Scalar ontology</span>
+          <h3>Atoms Know</h3>
+          <p>
+            A territory-first geometric ontology that inverts brain-centric models of consciousness. It derives
+            a forced Gram-matrix invariant <strong>c = −1/3</strong> and a face-sharing screw rotation
+            <strong>θ₀ = ±131.81°</strong>, with physical correspondence demonstrated across eleven independent
+            scales—from atomic (β-Mn) and genomic (CTCF) to neurological (grid cells) and clinical (fetal MRI).
+            The immortal jellyfish is presented as proof that life thrives through direct vibrational negotiation
+            with its own DNA.
+          </p>
+          <span class="url">atomsknow.macachor.org</span>
+        </a>
+
+        <a class="card physics" href="https://einsteinillusion.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Historical reconstruction</span>
+          <h3>Einstein: History’s Greatest Tactical Illusion</h3>
+          <p>
+            A forensic reconstruction arguing that Einstein’s rise was a tactical semantic operation: a marginal
+            patent clerk used the formal machinery of science to reclassify a collaborative research front into a
+            single-author breakthrough. It integrates the 1932 Einstein–Freud letters and the 1939
+            Einstein–Roosevelt letter into a single timeline leading to the material uranium record.
+          </p>
+          <span class="url">einsteinillusion.macachor.org</span>
+        </a>
+
+        <a class="card physics" href="https://dipoletorus.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Scalar field</span>
+          <h3>Dipole Radiation · Scalar Torus</h3>
+          <p>
+            A compact technical note arguing that dipole radiation is not vector cancellation but
+            <strong>scalar density equilibrium</strong>. The field seeks the path of least scalar resistance,
+            not force balance. It invokes Olinto De Pretto’s 1903 aether hypothesis and treats E = mc² as a
+            scalar density equilibrium statement rather than a conversion formula.
+          </p>
+          <span class="url">dipoletorus.macachor.org</span>
+        </a>
+
+        <a class="card physics" href="https://star.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Empirical analysis</span>
+          <h3>Star — Φ669 Empirical Analysis</h3>
+          <p>
+            An empirical scalar-field methodology comparing atmospheric conditions at two events: a 1967
+            tornadic outbreak and the birth of Christopher Macachor on April 30, 1967, establishing baseline
+            scalar signatures. It defines a Macachor–Zohuri scalar field equation using CAPE, CIN, latent heat
+            flux, and vorticity, with ERA5/NOAA/NASA as data sources.
+          </p>
+          <span class="url">star.macachor.org</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MATH -->
+    <section class="category" id="math">
+      <div class="section-head">
+        <div>
+          <h2>Mathematics &amp; Geometry</h2>
+          <p>Quaternionic, polyhedral, topological, and scalar-geometry formalisms under the Macachor Absolute φ = (√5−1)/2. Formalisms here are AI representations of the invariant; see the credit above.</p>
+        </div>
+        <span class="count">5 sites</span>
+      </div>
+
+      <div class="grid">
+        <a class="card math" href="https://144poly.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Geometry open</span>
+          <h3>144-Face Polyhedron — Scalar-Fraction Quantization</h3>
+          <p>
+            An arithmetic-verified but <strong>geometry-open</strong> framework. It defines four quantized scalar
+            fractions (Q1–Q4) as powers of φ, summing to <strong>1 + φ² = 2 − φ ≈ 1.381966</strong>. The value
+            144 remains an arithmetic identity (20 × 7.2), but the geometric construction is explicitly marked as
+            <strong>NOT SUPPLIED</strong>. Previous false derivations equating 20 × φ² to 144 have been withdrawn.
+          </p>
+          <span class="url">144poly.macachor.org</span>
+        </a>
+
+        <a class="card math" href="https://fibonacci.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Arithmetic verified</span>
+          <h3>Fibonacci — Macachor Absolute: 144-Face Polyhedron &amp; 4D Fibonacci Weave</h3>
+          <p>
+            A closely related page reinforcing the same epistemic discipline: arithmetic verified, geometry not
+            supplied, scalar definitional. It presents the scalar-fraction quantization table and the definitional
+            displacement <strong>D_abs</strong>.
+          </p>
+          <span class="url">fibonacci.macachor.org</span>
+        </a>
+
+        <a class="card math" href="https://tetra.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Workbench</span>
+          <h3>Tetrahedral Polyhedron Builder — Scalar Geometry Workbench</h3>
+          <p>
+            A hands-on construction environment for tetrahedral polyhedra within the scalar-geometry framework.
+            The page presents itself as a <strong>Scalar Geometry Workbench</strong> with a human ↔ machine bridge,
+            JSON export, and a JavaScript API for programmatic assembly of tetrahedral structures. Unlike the
+            144-Face Polyhedron page—which explicitly marks its geometry as “NOT SUPPLIED”—this site supplies the
+            builder itself: a tool for instantiating tetrahedral configurations rather than a page of declared results.
+          </p>
+          <span class="url">tetra.macachor.org</span>
+        </a>
+
+        <a class="card math" href="https://quaternion.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Quaternionic</span>
+          <h3>Quaternionic Periodic Table</h3>
+          <p>
+            Maps the 118 elements onto Platonic solids, arguing that each element’s crystalline structure and
+            valence geometry correspond to a Platonic solid representing its scalar density equilibrium. It invokes
+            the <strong>MGDH</strong> lineage—Macachor, Gauss, De Pretto, Hamilton—and a coherence Lagrangian as
+            stated on the page.
+          </p>
+          <span class="url">quaternion.macachor.org</span>
+        </a>
+
+        <a class="card math" href="https://torroid.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Topology</span>
+          <h3>Twin Clifford Tori</h3>
+          <p>
+            An interactive visualization of scalar resonance via quaternion double-cover. Twin tori are embedded
+            on the 3-sphere (<strong>S³ ⊂ ℝ⁴</strong>), with a <strong>π/4 phase offset</strong> creating
+            interlocked submanifolds that never intersect in 4D. Rotation is sampled aperiodically to avoid rational
+            resonance and decoherence.
+          </p>
+          <span class="url">torroid.macachor.org</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- BIO -->
+    <section class="category" id="bio">
+      <div class="section-head">
+        <div>
+          <h2>Biology, Medicine &amp; Material Memory</h2>
+          <p>Scalar and enteric frameworks applied to biological and material systems.</p>
+        </div>
+        <span class="count">4 sites</span>
+      </div>
+
+      <div class="grid">
+        <a class="card bio" href="https://scalar.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Enteric system</span>
+          <h3>Scalar — Pregnancy: A Paradigm Shift</h3>
+          <p>
+            Argues that the emotional storm of pregnancy is not “just hormones” but a signal from the
+            <strong>enteric nervous system (ENS)</strong>—a network of ~500 million neurons that forms before the
+            cerebral cortex and can generate complex motor patterns autonomously. The ENS is framed as
+            evolutionarily primary, not a subordinate “second brain.”
+          </p>
+          <span class="url">scalar.macachor.org</span>
+        </a>
+
+        <a class="card bio" href="https://christophermacachor.github.io/Archonic-Removal/" target="_blank" rel="noopener">
+          <span class="badge">Biological synthesis</span>
+          <h3>Archonic Removal — The Macachor Compression Invariant V2</h3>
+          <p>
+            The corpus’s most expansive biological synthesis: <strong>Absolute Non-Local Consciousness (ANLC)</strong>
+            is presented as the primary architecture that constructs biological systems, not an emergent property.
+            It maps hydrostatic guideway engineering onto human physiology, integrates HeartMath coherence research,
+            and alleges a 1,500-year “Archonic medical narrative” suppressing enteric intelligence.
+          </p>
+          <span class="url">christophermacachor.github.io/Archonic-Removal/</span>
+        </a>
+
+        <a class="card bio" href="https://clayremembers.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Material memory</span>
+          <h3>The Clay Remembers</h3>
+          <p>
+            A material-science essay arguing that clay is a <strong>dual-porosity thermodynamic system</strong>
+            that retains a directional signature of every force it has experienced. It rigorously dismantles a
+            fringe claim that cuneiform tablets are “scalar-encoded” data storage—no NMR, HRXRD, or micro-CT was
+            ever performed—while arguing that the underlying mechanism of physical memory in clay is real and
+            measurable.
+          </p>
+          <span class="url">clayremembers.macachor.org</span>
+        </a>
+
+        <a class="card bio" href="https://dnacodon.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Applied tool</span>
+          <h3>DNA Codon — Codon Optimizer</h3>
+          <p>
+            An RNN-based codon optimization tool using host-specific codon frequency tables weighted by the
+            Macachor density differential. It integrates ClinVar variant lookup and is framed as complementary to
+            prime editing for gene therapy (HBB, PAH, DMD).
+          </p>
+          <span class="url">dnacodon.macachor.org</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SYMBOLIC -->
+    <section class="category" id="symbolic">
+      <div class="section-head">
+        <div>
+          <h2>Symbolic &amp; Educational Projects</h2>
+          <p>Child-oriented scalar education and a distinct multi-spiritual tarot project.</p>
+        </div>
+        <span class="count">2 sites</span>
+      </div>
+
+      <div class="grid">
+        <a class="card symbolic" href="https://kids.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Education</span>
+          <h3>Kids — Scalar Fields Adventure</h3>
+          <p>
+            A child-oriented educational page introducing scalar fields through the metaphor of an “invisible
+            blanket” covering the universe. It profiles the four MGDH figures—Macachor (the Scalar Explorer),
+            Gauss (the Pattern Finder), De Pretto (the Energy Seer), and Hamilton (the Number Wizard)—and links
+            scalar fields to ocean waves, temperature maps, music, and magnets.
+          </p>
+          <span class="url">kids.macachor.org</span>
+        </a>
+
+        <a class="card symbolic" href="https://tarrot.macachor.org/" target="_blank" rel="noopener">
+          <span class="badge">Symbolic</span>
+          <h3>Tarrot — The Sacred Web <span class="sic">[sic]</span></h3>
+          <p>
+            A distinct, non-scalar project: a <strong>79-card multi-spiritual tarot deck</strong> authored by
+            Jannie Bui Brown and illustrated by James W. Brown IV, born from James’s traumatic brain injury
+            recovery. The deck is gender-neutral, has no reversals, and weaves tarot with astrology, gemstones,
+            yoga, mudra, and mantra.
+          </p>
+          <span class="url">tarrot.macachor.org</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- STATUS -->
+    <section class="status-note" id="status">
+      <h2>Corpus status note</h2>
+      <p>
+        Several pages explicitly mark their own claims as <strong>“Geometry Open”</strong> or
+        <strong>“Physics Open.”</strong> This is an internal epistemic discipline: it distinguishes declared
+        commitments from verified results. This landing page preserves those status labels rather than flattening
+        the corpus into a single register of settled claims.
+      </p>
+      <p>
+        Mathematical formalisms across the corpus are declared as <strong>AI representations of the
+        invariant</strong>—translation layers, not original mathematical discoveries. The claimed
+        contribution is the <strong>polymath method</strong>: semantic compression into a structural
+        invariant, and the cross-domain synthesis that finds the structure connecting the fragments.
+        The mathematics is the map drawn to navigate the territory.
+      </p>
+      <div class="totals" aria-label="Category counts">
+        <span>Core contribution</span>
+        <span>Foundational 2</span>
+        <span>Institutional critique 4</span>
+        <span>Physics 4</span>
+        <span>Mathematics 5</span>
+        <span>Biology/material 4</span>
+        <span>Symbolic/educational 2</span>
+        <span><strong>Total: 21 sites</strong></span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>
+        <strong>The Macachor Research Corpus</strong> · categorized landing page · inventory dated 5 November 2026.
+      </p>
+      <p>
+        Summaries are based on the titles, structure, and page labels supplied for this corpus; live-page
+        verification is pending. All mathematical formulas are credited as AI representations of the invariant,
+        not original mathematical discovery. External links open in a new tab.
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
